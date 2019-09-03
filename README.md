@@ -2,18 +2,24 @@
 Repositório do projeto da equipe 3 do Trainee da Code jr. 2019.2
 
 Paula Brincos
+
 Projeto Trainee, Code Jr, Grupo 3, 2019.2
+
 Desenvolvedores:
 
 Rafaela
+
 Darlan
+
 André
 
 Scrum Master:
 Gabriel Chaves
 
 GIT TUTORIAL
+
 Primeira configuração
+
 Entre na pasta onde irá guardar o projeto: cd /caminho/para/a/pasta
 
 Inicialize o git na pasta: git init
@@ -25,6 +31,7 @@ Entre na pasta criada pelo comando clone: cd /caminho/para/a/pasta/nova
 Crie sua branch usando como o padrão o nome da feature que você está a desenvolver: git checkout -b frontend_painel_adm
 
 Rotina
+
 Adicione as alterações feitas: git add .
 
 Cheque em qual branch está e quais alterações foram adicionadas: git status
@@ -34,6 +41,7 @@ Dê um commit com uma mensagem especificando as alterações realizadas: git com
 Envie o commit feito para sua branch: git push origin suabranch
 
 Quando estiver tudo prontinho
+
 Volte para a master: git checkout master
 
 Atualize a master: git pull
