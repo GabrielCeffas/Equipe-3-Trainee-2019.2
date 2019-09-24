@@ -1,0 +1,16 @@
+ 
+.navbar{
+    font-family: 'Forum', cursive;
+    font-size: 120%;
+}
+
+
+.header{
+   background-color: #DAA520;
+   color: black!important;
+   text-align: center;
+   line-height: 110px;
+   height: 120px;
+   margin-top: 50px;
+   font-family: 'Quicksand', sans-serif!important;
+}
