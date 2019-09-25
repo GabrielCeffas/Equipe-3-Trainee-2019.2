@@ -1,9 +1,17 @@
-@import url('https://fonts.googleapis.com/css?family=Numans');
 
 html,body{
-background: no-repeat;
 height: 100%;
-font-family: 'Numans', sans-serif;
+font-family: 'Quicksand', sans-serif;
+}
+
+.navbar{
+    font-family:'Quicksand', sans-serif;
+    font-size: 120%;
+}
+
+body{
+    background-image:url("img/textura.jpg");
+    font-family: 'Quicksand', sans-serif!important;
 }
 
 .container{
@@ -13,7 +21,7 @@ align-content: center;
 
 .card{
 display: flex;
-align-self: baseline;
+align-self: center;
 height: 370px;
 margin-top: auto;
 margin-bottom: auto;
@@ -22,13 +30,13 @@ background-color: rgba(0,0,0,0.5) !important;
 }
 
 .card-header h3{
-    color: #ffd700;
+    color: #DAA520;
     }
 
 
 .input-group-prepend span{
 width: 50px;
-background-color:  #ffd700;
+background-color:  #DAA520;
 color: black;
 border:0 !important;
 }
@@ -53,21 +61,21 @@ margin-right: 5px;
 
 .login_btn{
 color: black;
-background-color: #ffd700;
+background-color: #DAA520;
 width: 100px;
 }
 
 .login_btn:hover{
-color: #ffd700;
+color: #DAA520;
 background-color: white;
 }
 
 .links{
-color: white;
+color: #DAA520;
 }
 
 .links a{
 margin-left: 4px;
-color: #ffd700;
+color: #DAA520!important;
 }
 
