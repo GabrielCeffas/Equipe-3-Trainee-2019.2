@@ -10,7 +10,7 @@ font-family: 'Quicksand', sans-serif;
 }
 
 body{
-    background-image:url("img/textura.jpg");
+    background-image:url("img/textura4.jpg");
     font-family: 'Quicksand', sans-serif!important;
 }
 
@@ -48,7 +48,7 @@ box-shadow: 0 0 0 0 !important;
 }
 
 .remember{
-color: white;
+color: #DAA520;
 }
 
 .remember input
