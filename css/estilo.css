@@ -5,8 +5,7 @@
 
 #rodape{
     background-color: #f1f0eb;
-    width: auto;
-    height: auto;
+    margin: 0%;"!important"
 }
 
 .bto{
@@ -104,4 +103,10 @@ body {
 
 .nav-home {
     font-size: 120%;
+}
+
+#produto{
+    display: flex;
+    justify-content: center;
+    align-content: center;
 }
