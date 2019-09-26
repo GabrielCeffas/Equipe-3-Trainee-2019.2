@@ -1,16 +1,14 @@
-*, *:before, *:after { 
-    margin:0;
-    padding:0;    
-}
-
 #rodape{
     background-color: #f1f0eb;
-    margin: 0%;"!important"
+}
+.row {
+    margin-right: 0;
+    margin-left: 0;
 }
 
 .bto{
     width: 40%; 
-    background: transparent;
+    background: transparent;    
     padding: 5px;
     font-size: 15px;  
     border: 1px solid #000000;   
@@ -31,6 +29,7 @@
 #copyright{
     font-size: 13px;
     text-align: center;
+    margin-bottom: 0;
 }
 
 #end{
@@ -90,7 +89,7 @@ nav a:hover {
 }
 
 .texto_hist{
-    font-size: 80%;
+    font-size: 90%;
 }
 
 ul{
@@ -105,8 +104,14 @@ body {
     font-size: 120%;
 }
 
-#produto{
+.produto{
     display: flex;
     justify-content: center;
-    align-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#planejamento_estrategico {
+    width: 40%;
+    height: auto;
 }
