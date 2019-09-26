@@ -5,7 +5,8 @@
 
 #rodape{
     background-color: #f1f0eb;
-    margin: 0%;"!important"
+    width: auto;
+    height: auto;
 }
 
 .bto{
@@ -22,21 +23,15 @@
     border-bottom: 1px solid #000;    
 }
 
-.social{
-    font-size: 200%;
+#social{
     margin: 2%;
-    color: #000000;
-}
-
-.row {
-    margin-right: 0;
-    margin-left: 0;
+    width: 25px;
+    height: 25px;
 }
 
 #copyright{
     font-size: 13px;
     text-align: center;
-    margin-bottom: 0;
 }
 
 #end{
@@ -70,10 +65,44 @@ nav a:link {
 }
 
 nav a:hover {
-    text-decoration: none;
+    text-decoration: underline;
     color: #000000;
 }
 
-.login{
-    color: #000;
+.conheca{
+    background-color: #daa520;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#qsomos
+{
+    width: 90%;
+    height: auto;
+    margin: 2%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.hist{
+        margin: 2%;
+        margin-right: 2%;
+}
+
+.texto_hist{
+    font-size: 80%;
+}
+
+ul{
+    list-style-type: none;
+}
+ 
+body {
+    font-family: 'Quicksand', sans-serif;
+}
+
+.nav-home {
+    font-size: 120%;
 }
