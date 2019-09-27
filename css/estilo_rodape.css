@@ -1,17 +1,14 @@
-*, *:before, *:after { 
-    margin:0;
-    padding:0;    
-}
-
 #rodape{
     background-color: #f1f0eb;
-    width: auto;
-    height: auto;
+}
+.row {
+    margin-right: 0;
+    margin-left: 0;
 }
 
 .bto{
     width: 40%; 
-    background: transparent;
+    background: transparent;    
     padding: 5px;
     font-size: 15px;  
     border: 1px solid #000000;   
@@ -32,6 +29,7 @@
 #copyright{
     font-size: 13px;
     text-align: center;
+    margin-bottom: 0;
 }
 
 #end{
@@ -69,40 +67,12 @@ nav a:hover {
     color: #000000;
 }
 
-.conheca{
-    background-color: #daa520;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#qsomos
-{
-    width: 90%;
-    height: auto;
+.social{
     margin: 2%;
-    display: flex;
-    align-content: center;
-    justify-content: center;
+    color: #000000;
+    font-size: 30px;
 }
 
-.hist{
-        margin: 2%;
-        margin-right: 2%;
-}
-
-.texto_hist{
-    font-size: 80%;
-}
-
-ul{
-    list-style-type: none;
-}
- 
-body {
-    font-family: 'Quicksand', sans-serif;
-}
-
-.nav-home {
-    font-size: 120%;
+.login{
+    color: #000000;
 }
