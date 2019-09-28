@@ -63,37 +63,26 @@ nav a:link {
 }
 
 nav a:hover {
-    text-decoration: underline;
+    text-decoration: none;
+    color: #000000;
+}
+
+.social{
+    margin: 2%;
+    color: #000000;
+    font-size: 30px;
+}
+
+.login{
     color: #000000;
 }
 .conheca{
-    background-color: #daa520;
+    background-color: #ffc6b3;
+    width: auto;
+    height: auto;
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-#qsomos
-{
-    width: 90%;
-    height: auto;
-    margin: 2%;
-    display: flex;
-    align-content: center;
-    justify-content: center;
-}
-
-.hist{
-        margin: 2%;
-        margin-right: 2%;
-}
-
-.texto_hist{
-    font-size: 90%;
-}
-
-ul{
-    list-style-type: none;
 }
  
 body {
