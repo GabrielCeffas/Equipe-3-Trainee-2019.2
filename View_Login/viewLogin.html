@@ -1,28 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <title>Pagina de Login</title>
-   
-    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!doctype html>
+<html lang="pt">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="viewLogin.css">
     <script src="https://kit.fontawesome.com/101f0cf20a.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
-    <link rel="icon" href="img/logodiamante.png">
-
-    <!--Bootsrap 4 CDN-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     
-    <!--Fontawesome CDN-->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="icon" href="img/logodiamante.png">
+    <title>Pagina de Login</title>
+  </head>
+  <body>
 
-    <!--Custom styles-->
-    <link rel="stylesheet" type="text/css" href="viewLogin.css">
-</head>
-
-
-<body class="login">
         <nav class="navbar nav-home navbar-expand-lg navbar-light bg-light">
                 <a class="navbar-brand" href="#">
                     <img src="img/logodiamante.png" width="50" height="40" alt="">
@@ -53,76 +45,88 @@
                     </form>
                 </div>
         </nav>
-
-    <div class="container login">
-        <div class="d-flex justify-content-center h-100">
+    
+    <div class="d-flex container-fluid justify-content-center align-items-center">
             <div class="card">
-                <div class="card-header">
-                    <h3>Login administrador</h3>
-                </div>
-                <div class="card-body">
-                    <form>
-                        <div class="input-group form-group">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text"><i class="fas fa-user"></i></span>
-                            </div>
-                            <input type="text" class="form-control"  placeholder="usuario">
-                        </div>
-                        <div class="input-group form-group">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text"><i class="fas fa-key"></i></span>
-                            </div>
-                            <input type="password" class="form-control" placeholder="senha">
-                        </div>
-                        <div class="row align-items-center remember">
-                            <input type="checkbox">Lembrar usuario
-                        </div>
-                        <div class="form-group">
-                            <input type="submit" value="Entrar" class="btn float-right login_btn" >
-                        </div>
-                    </form>
-                </div>
-                <div class="card-footer">
-                    <div class="d-flex justify-content-center links">
-                        <a href="#">Esqueceu a senha?</a>
+
+                    <div class="card-header text-center">
+                            <h3>Login administrador</h3>
                     </div>
-                </div>
-            </div>
-        </div>
+
+                        <div class="card-body">
+
+                                <form>
+                                        <div class="input-group form-group">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text"><i class="fas fa-user"></i></span>
+                                            </div>
+                                            <input type="text" class="form-control"  placeholder="usuario">
+                                        </div>
+                                        <div class="input-group form-group">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text"><i class="fas fa-key"></i></span>
+                                            </div>
+                                            <input type="password" class="form-control" placeholder="senha">
+                                        </div>
+                                        <div class="row align-items-center remember">
+                                            <input type="checkbox">Lembrar usuario
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="submit" value="Entrar" class="btn float-right login_btn" >
+                                        </div>
+
+                                </form>
+                        </div>
+
+                        <div class="card-footer">
+
+                                <div class="d-flex justify-content-center links">
+                                        <i class="fas fa-lock"></i>
+                                </div>
+
+                        </div>
+        
     </div>
 
-    <footer id="rodape" class="mt-5 content">
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+
+  <footer id="rodape" class="mt-5 content">
         <div>
-          <div class="row p-2  text-center">
+          <div class="text-center row">
             <div class="col-md-4 mapaSite">
               <a href="index.html"><img id="logo" src="img/logo.png"></a>
             </div>
             <div class="col-md-4 mapaSite">
               <nav>
                 <p><h6>Nossa empresa</h6></p>
-                <p><a class="menu" href="#">Home</a></p>
-                <p><a class="menu" href="#">Veja os nossos produtos</a></p>
+                <p><a class="menu" href="index.html">Home</a></p>
+                <p><a class="menu" href="produtos.html">Veja os nossos produtos</a></p>
                 <p><a class="menu" href="quemsomos.html">Quem Somos</a></p>
-                <p><a class="menu" href="#">Entre em contato</a></p>
+                <p><a class="menu" href="viewContato.html">Entre em contato</a></p>
               </nav>
             </div>
             <div id="end" class="col-md-4">
-              <section>
+              <sect-ion>
                 <p for="email"><h6>Nos Acompanhe</h6></p>
                 <p id="end">E seja o primeiro a receber todas as novidades de nossa loja pelo o seu email.</p>
                 <p><input class="UserEmail form-control" name="UserEmail" id="UserEmail" type="email" placeholder="Seu email"></p>
-                <p><input class="bto" type="submit" value="Inscreva-se!"/></p>
+                <p><input class="btn btn-outline-dark bto" type="submit" value="Inscreva-se!"/></p>
               </section>
-              <p><a title="Facebook" href="http://facebook.com/"><img id="social"src="img/facebook.png"></i></a>
-              <a title="Instagram" href="http://instagram.com/"><img id="social"src="img/instagram.png"></i></a>
-              <a title="Twitter" href="http://twitter.com/"><img id="social"src="img/twitter.png"></i></a>
-              <a title="Whatsapp" href="http://web.whatsapp.com/"><img id="social"src="img/whatsapp.png"></i></a></p>
+              <p><a title="Facebook" href="http://facebook.com/"><i class="fab fa-facebook-square social"></i></a>
+              <a title="Instagram" href="http://instagram.com/"><i class="fab fa-instagram social"></i></i></a>
+              <a title="Twitter" href="http://twitter.com/"><i class="fab fa-twitter social"></i></i></a>
+              <a title="Whatsapp" href="http://web.whatsapp.com/"><i class="fab fa-whatsapp-square social"></i></a></p>
             </div>
           </div>
+          <p id="copyright">© Copyright 2019 - Todos os direitos reservados. <a href="viewLogin.html"><i class="fas fa-lock login"></i></a></p>
         </div>
-        <p id="copyright">© Copyright 2019 - Todos os direitos reservados.</p>
       </footer>
-
-</body>
 
 </html>
