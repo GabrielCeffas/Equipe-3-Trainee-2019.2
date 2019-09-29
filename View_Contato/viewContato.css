@@ -1,14 +1,20 @@
  body{
-    font-family:'Quicksand', sans-serif;
+    font-family:'Quicksand', sans-serif!important;
  }
 
+ .card-body{
+    background-color: #ffc6b3!important;
+    size: 10px;
+ }
  
 .navbar{
     font-family:'Quicksand', sans-serif;
     font-size: 120%;
 }
 
-
+.container{
+    margin-top: 70px;
+}
 .header{
    background-color: #DAA520;
    color: black!important;
@@ -19,21 +25,41 @@
    font-family: 'Quicksand', sans-serif!important;
 }
 
-
+.ende{
+    font-size: 15px;
+    line-height:0px;
+}
   
-*, *:before, *:after { 
-    margin:0;
-    padding:0;    
+
+.iframe-container{
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* Ratio 16:9 ( 100%/16*9 = 56.25% ) */
+}
+.iframe-container > *{
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
 }
 
 #rodape{
     background-color: #f1f0eb;
-    margin: 0%;"!important"
+}
+.row {
+    margin-right: 0;
+    margin-left: 0;
 }
 
 .bto{
     width: 40%; 
-    background: transparent;
+    background: transparent;    
     padding: 5px;
     font-size: 15px;  
     border: 1px solid #000000;   
@@ -54,6 +80,7 @@
 #copyright{
     font-size: 13px;
     text-align: center;
+    margin-bottom: 0;
 }
 
 #end{
@@ -75,4 +102,28 @@
     max-width: 1080px;
     width: 45%;
     height: auto;
+}
+
+nav a {
+    color: #000000;
+}
+
+nav a:link {
+    text-decoration: none;
+    color: #000000;
+}
+
+nav a:hover {
+    text-decoration: none;
+    color: #000000;
+}
+
+.social{
+    margin: 2%;
+    color: #000000;
+    font-size: 30px;
+}
+
+.login{
+    color: #000000;
 }
