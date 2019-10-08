@@ -8,8 +8,8 @@ body{
     background-image:url("img/textura15.jpg");
 }
 
-.container-fluid{
-    height: 820px;
+.container{
+    height: 520px;
 }
 
 .card{
@@ -61,17 +61,19 @@ margin-right: 5px;
     color: black!important;
 }
 
+*, *:before, *:after { 
+    margin:0;
+    padding:0;    
+}
+
 #rodape{
     background-color: #f1f0eb;
-}
-.row {
-    margin-right: 0;
-    margin-left: 0;
+    margin: 0%;"!important"
 }
 
 .bto{
     width: 40%; 
-    background: transparent;    
+    background: transparent;
     padding: 5px;
     font-size: 15px;  
     border: 1px solid #000000;   
@@ -92,7 +94,7 @@ margin-right: 5px;
 #copyright{
     font-size: 13px;
     text-align: center;
-    margin-bottom: 0;
+    margin-bottom: 0px;
 }
 
 #end{
@@ -126,9 +128,49 @@ nav a:link {
 }
 
 nav a:hover {
-    text-decoration: none;
+    text-decoration: underline;
     color: #000000;
 }
+.conheca{
+    background-color: #daa520;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#qsomos
+{
+    width: 90%;
+    height: auto;
+    margin: 2%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.hist{
+        margin: 2%;
+        margin-right: 2%;
+}
+
+.texto_hist{
+    font-size: 80%;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.nav-home {
+    font-size: 120%;
+}
+
+#produto{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
 
 .social{
     margin: 2%;
