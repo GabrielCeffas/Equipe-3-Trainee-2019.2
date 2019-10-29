@@ -85,3 +85,12 @@ nav a:hover {
     color: #000000;
 }
 
+.crud{
+    display: flex;
+    align-self: center;
+    justify-content: center;
+}
+
+.desc{
+    margin-top: 12%;
+}
