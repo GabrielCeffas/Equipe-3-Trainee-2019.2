@@ -1,20 +1,10 @@
-<!doctype html>
-<html lang="pt">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="icon" href="img/logodiamante.png">
-    <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/101f0cf20a.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/estilo_qSomos.css">
-  </head>
+
  
   <footer id="rodape" class="mt-5 content">
     <div>
       <div class="text-center row">
         <div class="col-md-4 mapaSite">
-          <a href="index.html"><img id="logo" src="img/logo.png"></a>
+          <a href="index.html"><img id="logo" src="./assets/img/logo.png"></a>
         </div>
         <div class="col-md-4 mapaSite">
           <nav>
@@ -40,5 +30,4 @@
       </div>
       <p id="copyright">© Copyright 2019 - Todos os direitos reservados. <a href="viewLogin.php"><i class="fas fa-lock login"></i></a></p>
     </div>
-  </footer>
-</html>
+</footer>

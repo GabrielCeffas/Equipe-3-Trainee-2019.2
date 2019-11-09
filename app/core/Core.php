@@ -19,7 +19,7 @@ class Core{
     public function verificaUri(){
         $url =explode("index.php", $_SERVER["PHP_SELF"]);
         $url = end($url);
-        
+ 
         if($url!=""){
             $url = explode('/', $url);
             array_shift($url);
