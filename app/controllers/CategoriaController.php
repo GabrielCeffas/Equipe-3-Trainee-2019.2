@@ -4,7 +4,7 @@ use app\core\Controller;
 
 class CategoriaController extends Controller{
     
-   public function index() {
+   public function categoria() {
        $dados["view"] = "categoria/Index";
        $this->load("template", $dados);
    } 

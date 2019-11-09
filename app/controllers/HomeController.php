@@ -8,4 +8,5 @@ class HomeController extends Controller{
         $dados["view"] = "v_admhome";
         $this->load("template", $dados);
    } 
+   
 }
