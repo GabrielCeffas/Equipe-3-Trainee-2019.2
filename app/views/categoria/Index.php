@@ -4,21 +4,32 @@
             <input class="form-control mr-sm-2" type="search" placeholder="buscar..." aria-label="Search">
             <button class="btn btn-outline-dark" type="submit"><i class="fas fa-search"></i></button>
         </form>
-        <a href="<?php echo URL_BASE ."novo" ?>"><button type="button" class="btn btn-outline-success">Nova Categoria</button></a>
+        <a href="<?php echo URL_BASE ."/categoria/novo" ?>"><button type="button" class="btn btn-outline-success">Nova Categoria</button></a>
     </div>
     <table class="table mt-3 text-center">
         <thead class="thead-dark">
             <tr>
                 <th scope="col">Nome</th>
+                <th scope="col">Descrição</th>
                 <th scope="col">Ação</th>
             </tr>
         </thead>
         <tbody>
-
+            
+            <?php if(is_array($categorias)){ foreach ($categorias as $categoria) { ?>
+            <tr>
+                    <td><?php echo $categoria->nome ?></td>
+                    <td><?php echo $categoria->descricao ?></td>
+                    <td>
+                        <a href="<?php echo URL_BASE ."/categoria/editar/". $categoria->id?>" class="btn btn-outline-info btn-sm">Editar</a>
+                        <a href="<?php echo URL_BASE ."/categoria/apagar/". $categoria->id?>" class="btn btn-outline-danger"><i class="fas fa-trash-alt"></i></a>
+                    </td>
+                </tr>
+            <?php }} ?>
         </tbody>
     </table>
-    <p><h4 class="mt-4 mb-4 text-center">Nenhuma Categoria Cadastrada!</h4></p>
-    <button type="button" class="btn btn-outline-dark"><i class="fas fa-arrow-left"></i> Voltar</button>
+    
+    <a href="./"><button type="button" class="btn btn-outline-dark"><i class="fas fa-arrow-left"></i> Voltar</button></a>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

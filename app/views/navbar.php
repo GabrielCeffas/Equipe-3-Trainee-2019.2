@@ -1,6 +1,6 @@
 <nav class="navbar nav-home navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="<?php echo URL_BASE ?>">
-        <img src="<?php echo URL_BASE ."assets/img/logodiamante.png" ?>" width="50" height="40" alt="">
+    <a class="navbar-brand" href="#">
+        <img src="<?php echo URL_BASE ."/assets/img/logodiamante.png" ?>" width="50" height="40" alt="">
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

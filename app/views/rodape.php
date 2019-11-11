@@ -2,7 +2,7 @@
   <div>
     <div class="text-center row">
       <div class="col-md-4 mapaSite">
-        <a href="<?php echo URL_BASE ?>"><img id="logo" src="<?php echo URL_BASE ."assets/img/logo.png" ?>"></a>
+        <a href="index.html"><img id="logo" src="<?php echo URL_BASE ."/assets/img/logo.png" ?>"</a>
       </div>
       <div class="col-md-4 mapaSite">
         <nav class="men">
@@ -14,7 +14,7 @@
         </nav>
       </div>
       <div id="end" class="col-md-4">
-        <sect-ion>
+        <section>
           <p for="email"><h6>Nos Acompanhe</h6></p>
           <p id="end">E seja o primeiro a receber todas as novidades de nossa loja pelo o seu email.</p>
           <p><input class="UserEmail form-control" name="UserEmail" id="UserEmail" type="email" placeholder="Seu email"></p>

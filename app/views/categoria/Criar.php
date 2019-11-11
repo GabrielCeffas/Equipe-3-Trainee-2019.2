@@ -1,17 +1,27 @@
-<div class="container">
-    <div class="text-center mt-4">
-            <h1>Criar Categorias</h1>
-    </div>
-<div class="form container text-center crud">
-    <div class="mt-4 col-md-4 mb-3">
-        <label><h5>Nome da Categoria</h5></label>
-        <input type="text" class="form-control" placeholder="Digite o nome da categoria" required>
-        <div  class="desc">
-            <label><h5>Descrição da Categoria</h5></label>
-            <input type="text" class="form-control" placeholder="Descreva a categoria" required>
+<div class="container mt-3">
+        <div class="card">
+            <h5 class="card-header">
+                <p class="font-weight-bold">Nova Categoria</p>
+            </h5>
+            <div class="card-body">
+                <form action="<?php echo URL_BASE ."/categoria/salvar" ?>" method="POST">
+                    <div class="form-group">
+                        <div class="form-group">
+                            <label for="inputname">Nome</label>
+                            <input type="name" name="nome" class="form-control" id="inputname" placeholder="Digite o nome da categoria">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlTextarea1">Descrição:</label>
+                        <input name="descricao" class="form-control" id="exampleFormControlTextarea1" rows="3">
+                    </div>
+                        </div>
+                        <div class="col-md-6">
+            
+                        <input type="submit" value="Salvar" class="btn btn-outline-success mb-2">
+                        
+                        </div>
+                </form>
+            </div>
         </div>
     </div>
-</div>
-<div class="text-center mt-3">
-    <button class="btn btn-outline-success mb-3" type="submit">Salvar Categoria</button>
-    <button type="button" class="btn btn-outline-dark mb-3"><i class="fas fa-arrow-left"></i> Voltar</button>

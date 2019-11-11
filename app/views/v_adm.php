@@ -5,20 +5,20 @@
         
         <div class="form-row container mt-5">
             <div class="mt-3 col-md-4 mb-3">
-                <a class="adm" title="Usuários" href="crudUsuarios.html"><i class="fas fa-users adm"></i>
+                <a class="adm" title="Usuários" href="<?php echo URL_BASE ."/usuario" ?>"><i class="fas fa-users adm"></i>
                 <p><h3>Usuários</h3></p></a>
             </div>
             <div class="mt-3 col-md-4 mb-3">
-                <a class="adm" title="Produtos" href="crudProdutos.html"><i class="fas fa-gem adm"></i>
+                <a class="adm" title="Produtos" href="<?php echo URL_BASE ."/produto" ?>"><i class="fas fa-gem adm"></i>
                 <p><h3>Produtos</h3></p></a>
             </div>
             <div class="mt-3 col-md-4 mb-3">
-                <a class="adm" title="Categorias" href="<?php echo URL_BASE ."categoria" ?>"><i class="fas fa-list adm"></i>
+                <a class="adm" title="Categorias" href="<?php echo URL_BASE ."/categoria" ?>"><i class="fas fa-list adm"></i>
                 <p><h3>Categorias</h3></p></a>
             </div>
         </div>
         <div class="mt-5 col-md-4 mb-3">
-            <button type="button" class="btn btn-outline-dark"><i class="fas fa-arrow-left"></i> Sair da Página Administrativa</button>
+            <a href=""><button type="button" class="btn btn-outline-dark"><i class="fas fa-arrow-left"></i> Sair da Página Administrativa</button></a>
         </div>
     </div>
     
