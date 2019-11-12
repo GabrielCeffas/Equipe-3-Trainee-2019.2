@@ -19,6 +19,7 @@
                         <div class="col-md-6">
             
                         <input type="submit" value="Salvar" class="btn btn-outline-success mb-2">
+                        <a href="<?php echo URL_BASE ."/categoria" ?>"><button type="button" class="btn btn-outline-dark mb-2"><i class="fas fa-arrow-left"></i> Voltar</button></a>
                         
                         </div>
                 </form>

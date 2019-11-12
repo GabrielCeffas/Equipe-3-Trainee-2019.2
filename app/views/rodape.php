@@ -2,7 +2,7 @@
   <div>
     <div class="text-center row">
       <div class="col-md-4 mapaSite">
-        <a href="index.html"><img id="logo" src="<?php echo URL_BASE ."/assets/img/logo.png" ?>"</a>
+        <a href="<?php echo URL_BASE?>"><img id="logo" src="<?php echo URL_BASE ."/assets/img/logo.png" ?>"</a>
       </div>
       <div class="col-md-4 mapaSite">
         <nav class="men">
@@ -26,6 +26,6 @@
         <a title="Whatsapp" href="http://web.whatsapp.com/"><i class="fab fa-whatsapp-square social"></i></a></p>
       </div>
     </div>
-    <p id="copyright">© Copyright 2019 - Todos os direitos reservados. <a href="../viewLogin.php"><i class="fas fa-lock login"></i></a></p>
+    <p id="copyright">© Copyright 2019 - Todos os direitos reservados. <a href="<?php echo URL_BASE ."/login"?>"><i class="fas fa-lock login"></i></a></p>
   </div>
 </footer>

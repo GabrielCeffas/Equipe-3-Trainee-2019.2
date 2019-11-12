@@ -1,9 +1,10 @@
 <div class="container mt-3">
     <div class="d-flex justify-content-between">
-        <form class="form-inline search-crud my-2 my-lg-0" method="POST" action="<?php echo URL_BASE ."/categoria/pesquisar"?>">
+    <form class="form-inline search-crud my-2 my-lg-0" method="POST" action="<?php echo URL_BASE ."/categoria/pesquisar"?>">
             <input class="form-control mr-sm-2" type="search" name="categoria_pesquisar" placeholder="buscar..." aria-label="Search">
             <button class="btn btn-outline-dark" type="submit"><i class="fas fa-search"></i></button>
         </form>
+    <h4 class="text-center">Resultados das pesquisas de Categorias:</h4>
         <a href="<?php echo URL_BASE ."/categoria/novo" ?>"><button type="button" class="btn btn-outline-success">Nova Categoria</button></a>
     </div>
     <table class="table mt-3 text-center">
@@ -29,7 +30,7 @@
         </tbody>
     </table>
     
-    <a href="<?php echo URL_BASE ."/administrativo" ?>"><button type="button" class="btn btn-outline-dark"><i class="fas fa-arrow-left"></i> Voltar</button></a>
+    <a href="<?php echo URL_BASE ."/categoria" ?>"><button type="button" class="btn btn-outline-dark"><i class="fas fa-arrow-left"></i> Sair da Pesquisa</button></a>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

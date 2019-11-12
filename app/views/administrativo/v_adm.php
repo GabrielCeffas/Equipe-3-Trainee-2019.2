@@ -18,7 +18,7 @@
             </div>
         </div>
         <div class="mt-5 col-md-4 mb-3">
-            <a href=""><button type="button" class="btn btn-outline-dark"><i class="fas fa-arrow-left"></i> Sair da Página Administrativa</button></a>
+            <a href="<?php echo URL_BASE ?>"><button type="button" class="btn btn-outline-dark"><i class="fas fa-arrow-left"></i> Sair da Página Administrativa</button></a>
         </div>
     </div>
     
