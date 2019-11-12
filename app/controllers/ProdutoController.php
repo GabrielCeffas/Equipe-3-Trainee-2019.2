@@ -1,0 +1,41 @@
+<?php
+namespace app\controllers;
+use app\core\Controller;
+use app\models\Produto;
+
+class ProdutoController extends Controller{
+    
+   public function index(){
+       $produto = new Produto();
+
+       $dados["produtos"] = $produto->lista();
+       $dados["view"] = "produto/Index";
+
+       $this->load("template", $dados);
+   }
+   
+   public function novo(){
+      $dados["view"] = "produto/Criar";
+      $this->load("template", $dados);
+   }
+
+   public function editar(){
+      $dados["view"] = "produto/Editar";
+      $this->load("template", $dados);
+   }
+
+   public function salvar(){
+      $produto = new Produto();
+
+      $id = isset ($_POST["id"]) ? strip_tags(filter_input(INPUT_POST, "id")): NULL;
+      $nome = isset ($_POST["nome"]) ? strip_tags(filter_input(INPUT_POST, "nome")): NULL;
+      $preco = isset ($_POST["preco"]) ? strip_tags(filter_input(INPUT_POST, "preco")): NULL;
+      $descricao = isset ($_POST["descricao"]) ? strip_tags(filter_input(INPUT_POST, "descricao")): NULL;
+      $url_imagem = isset ($_POST["url_imagem"]) ? strip_tags(filter_input(INPUT_POST, "url_imagem")): NULL;
+      $data_venda = isset ($_POST["data_venda"]) ? strip_tags(filter_input(INPUT_POST, "data_venda")): NULL;
+      $categoria_id = isset ($_POST["categoria_id"]) ? strip_tags(filter_input(INPUT_POST, "categoria_id")): NULL;
+
+      $produto->inserir($nome, $preco, $descricao, $url_imagem, $data_venda, $categoria_id);
+      header("location:" . URL_BASE . "/produto");      
+   }
+ }
