@@ -1,7 +1,7 @@
 <div class="container mt-3">
         <div class="card">
             <h5 class="card-header">
-                <p class="font-weight-bold">Nova Categoria</p>
+                <p class="font-weight-bold">Editar Categoria</p>
             </h5>
             <div class="card-body">
                 <form action="<?php echo URL_BASE ."/categoria/salvar" ?>" method="POST">
@@ -20,6 +20,7 @@
                         
                         <input type="hidden" name="id" value="<?php echo $categoria->id?>">
                         <input type="submit" value="Salvar" class="btn btn-outline-success mb-2">
+                        <a href="<?php echo URL_BASE ."/categoria" ?>"><button type="button" class="btn btn-outline-dark mb-2"><i class="fas fa-arrow-left"></i> Voltar</button></a>
                         
                         </div>
                 </form>

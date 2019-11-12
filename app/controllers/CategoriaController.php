@@ -23,7 +23,6 @@ class CategoriaController extends Controller{
 
         $dados["categoria"] = $categoria->getCategoria($id);
         $dados["view"] = "categoria/Editar";
-
         $this->load("template", $dados);
     }
     
@@ -53,9 +52,17 @@ class CategoriaController extends Controller{
         $categoria->inserir($nome, $descricao);
     }
 
-
     header("location:" . URL_BASE ."/categoria");
     }
 
+    public function pesquisar(){
+        $categoria = new Categoria();
+
+        $pesquisar = isset($_POST["categoria_pesquisar"]) ? strip_tags(filter_input(INPUT_POST, "categoria_pesquisar")): NULL;
+
+        $dados["categorias"] = $categoria->resultado($pesquisar);
+        $dados["view"] = "categoria/Pesquisar";
+        $this->load("template", $dados);
+    }
 
 }
