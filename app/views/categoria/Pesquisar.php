@@ -18,7 +18,6 @@
         <tbody>
             
             <?php
-                if($produto == )
                 foreach ($categorias as $categoria) { ?>
             <tr>
                 <td><?php echo $categoria->nome ?></td>
