@@ -1,9 +1,56 @@
-body {
-    font-family: 'Quicksand', sans-serif;
+ body{
+    font-family:'Quicksand', sans-serif!important;
+ }
+
+ .card-body{
+    background-color: #ffc6b3!important;
+    size: 10px;
+ }
+ 
+.navbar{
+    font-family:'Quicksand', sans-serif;
+    font-size: 120%;
 }
 
-.nav-home {
-    font-size: 120%;
+.container{
+    margin-top: 70px;
+}
+
+.botao{
+    color:black!important;
+    background-color: #ffc6b3!important;
+}
+
+.botao:hover{
+    color: white!important;
+    background-color: gray!important;
+}
+
+.ende{
+    font-size: 15px;
+    line-height:0px;
+}
+
+.fa-paper-plane{
+    color: #686868;
+}
+
+.iframe-container{
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* Ratio 16:9 ( 100%/16*9 = 56.25% ) */
+}
+.iframe-container > *{
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
 }
 
 #rodape{
@@ -84,4 +131,3 @@ nav a:hover {
 .login{
     color: #000000;
 }
-

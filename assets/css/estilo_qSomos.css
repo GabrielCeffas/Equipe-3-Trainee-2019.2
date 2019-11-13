@@ -53,16 +53,16 @@
     height: auto;
 }
 
-nav a {
+.men a {
     color: #000000;
 }
 
-nav a:link {
+.men a:link {
     text-decoration: none;
     color: #000000;
 }
 
-nav a:hover {
+.men a:hover {
     text-decoration: none;
     color: #000000;
 }
@@ -71,6 +71,21 @@ nav a:hover {
     margin: 2%;
     color: #000000;
     font-size: 30px;
+}
+
+.adm{
+    color: #000000;
+    font-size: 220%;
+}
+
+.adm:hover{
+    text-decoration: none;
+    color: #000000;
+}
+
+.adm:link{
+    text-decoration: none;
+    color: #000000;
 }
 
 .login{

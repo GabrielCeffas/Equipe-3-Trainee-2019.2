@@ -1,0 +1,71 @@
+<?php
+
+namespace app\models;
+use app\core\Model;
+
+class Categoria extends Model{
+    public function __construct(){
+        parent::__construct();
+    }
+
+    public function lista(){
+        $sql = "SELECT * FROM usuario";
+        $qry = $this->db->query($sql);
+        return $qry->fetchAll(\PDO::FETCH_OBJ);
+        
+    }
+
+    public function getUsuario($id){
+        $resultado = array();
+        $sql = "SELECT * FROM usuario WHERE id = :id";
+
+        $qry = $this->db->prepare($sql);
+        $qry->bindValue(":id", $id);
+        $qry->execute();
+
+        if($qry->rowCount()>0){
+            $resultado = $qry->fetch(\PDO::FETCH_OBJ);
+        }
+
+        return $resultado;
+    }
+
+    public function inserir($nome, $email){
+        $sql = "INSERT INTO usuario SET nome = :nome, email = :email, senha = :senha";
+
+        $qry = $this->db->prepare($sql);
+        $qry->bindValue(":nome", $nome);
+        $qry->bindValue(":email", $email);
+        $qry->bindValue(":senha", $senha);
+        $qry->execute();
+
+        return $this->db->lastInsertId();
+    }
+
+    public function editar($id, $nome, $email){
+        $sql = "UPDATE usuario SET nome = :nome, email = :email, senha = :senha WHERE id = :id";
+
+        $qry = $this->db->prepare($sql);
+        $qry->bindValue(":nome", $nome);
+        $qry->bindValue(":senha", $email);
+        $qry->bindValue(":senha", $senha);
+        $qry->bindValue(":id", $id);
+        $qry->execute();
+    }
+
+    public function excluir($id){
+        $sql = "DELETE FROM usuario WHERE id = :id";
+
+        $qry = $this->db->prepare($sql);
+        $qry->bindValue(":id", $id);
+        $qry->execute();
+
+    }
+
+    public function resultado($pesquisar){
+        $sql = "SELECT * FROM usuario WHERE nome LIKE '%$pesquisar%'";
+        $qry = $this->db->query($sql);
+        return $qry->fetchAll(\PDO::FETCH_OBJ);
+    }
+    
+}
