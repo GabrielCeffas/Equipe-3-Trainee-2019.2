@@ -45,11 +45,12 @@ class UsuarioController extends Controller{
     $nome = isset($_POST["nome"]) ? strip_tags(filter_input(INPUT_POST, "nome")): NULL;
     $email = isset($_POST["email"]) ? strip_tags(filter_input(INPUT_POST, "email")): NULL; 
     $senha = isset($_POST["senha"]) ? strip_tags(filter_input(INPUT_POST, "senha")): NULL; 
+    $url_imagem = isset($_POST["url_imagem"]) ? strip_tags(filter_input(INPUT_POST, "url_imagem")): NULL; 
     if($id){
-        $usuario->editar($id, $nome, $email, $senha);
+        $usuario->editar($id, $nome, $email, $senha, $url_imagem);
     }
     else{
-        $usuario->inserir($nome, $email, $senha);
+        $usuario->inserir($nome, $email, $senha, $url_imagem);
     }
 
     header("location:" . URL_BASE ."/usuario");

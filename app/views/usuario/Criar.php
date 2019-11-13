@@ -18,7 +18,6 @@
                     </div>
                         <div class="col-md-6">
                         
-                        <input type="hidden" name="id" value="<?php echo $usuario->id?>">
                         <input type="submit" value="Salvar" class="btn btn-outline-success mb-2">
                         <a href="<?php echo URL_BASE ."/usuario" ?>"><button type="button" class="btn btn-outline-dark mb-2"><i class="fas fa-arrow-left"></i> Voltar</button></a>
                         

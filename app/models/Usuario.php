@@ -48,7 +48,7 @@ class Usuario extends Model{
 
         $qry = $this->db->prepare($sql);
         $qry->bindValue(":nome", $nome);
-        $qry->bindValue(":senha", $email);
+        $qry->bindValue(":email", $email);
         $qry->bindValue(":senha", $senha);
         $qry->bindValue(":id", $id);
         $qry->execute();
