@@ -27,7 +27,7 @@
                     <td> <?php echo $produto->categoria_id ?></td>
                     <td>
                         <a href="<?php echo URL_BASE . "/produto/editar/". $produto->id?>" class="btn btn-outline-info btn-sm">Editar</a>
-                        <a href="<?php echo URL_BASE . "/produto/deletar/". $produto->id?>" class="btn btn-outline-danger btn"><i class="fas fa-trash-alt"></i></a> 
+                        <a href="<?php echo URL_BASE . "/produto/apagar/". $produto->id?>" class="btn btn-outline-danger btn"><i class="fas fa-trash-alt"></i></a> 
                 </tr>
             <?php }} ?>
                 

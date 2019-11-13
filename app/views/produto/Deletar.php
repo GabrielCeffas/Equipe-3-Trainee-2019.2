@@ -1,7 +1,7 @@
 <div class="container mt-3">
         <div class="card">
             <h5 class="card-header">
-                <p class="font-weight-bold">Editar Produto</p>
+                <p class="font-weight-bold">Deletar Produto</p>
             </h5>
             <div class="card-body">
                     <div class="form-row">
@@ -38,9 +38,10 @@
                                 <option>5</option>
                             </select>
                         </div>
-                        <input type="hidden" name="id" value="<?php echo $produto->id?>">
-                        <a href="<?php echo URL_BASE ."/produto" ?>"><button type="button" class="btn btn-outline-dark mr-4"><i class="fas fa-arrow-left"></i></button></a>
-                        <a href="<?php echo URL_BASE ."cliente/deletar/" . $cliente->id . "/S" ?>"><button type="button" class="btn btn-outline-dark mr-4"><i">Excluir</i></button></a>
+                        <div class="col-md-6">
+                            <a class="btn btn-outline-danger mb-2" href="<?php echo URL_BASE ."/produto/apagar/" .$produto->id."/S" ?>">Excluir</a>
+                            <a href="<?php echo URL_BASE ."/produto" ?>"><button type="button" class="btn btn-outline-dark mb-2"><i class="fas fa-arrow-left"></i> Voltar</button></a>
+                        </div>
 
             </div>
         </div>

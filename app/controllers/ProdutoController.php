@@ -27,7 +27,7 @@ class ProdutoController extends Controller{
       $this->load("template", $dados);
    }
 
-   public function deletar($id, $excluir = NULL){
+   public function apagar($id, $excluir = NULL){
       $produto = new Produto();
 
       if ($excluir == "S"){

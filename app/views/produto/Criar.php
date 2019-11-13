@@ -39,11 +39,14 @@
                                 <option>5</option>
                             </select>
                         </div>
-                        <input type="submit" value="Salvar" class="btn btn-outline-success ml-2">
-                        <a href="<?php echo URL_BASE ."/produto" ?>"><button type="button" class="btn btn-outline-dark mb-2"><i class="fas fa-arrow-left"></i> Voltar</button></a>
+                        <div class="col-md-6">
 
-                </form>
-            </div>
+                            <input type="submit" value="Salvar" class="btn btn-outline-success mb-2">
+                            <a href="<?php echo URL_BASE ."/produto" ?>"><button type="button" class="btn btn-outline-dark mb-2"><i class="fas fa-arrow-left"></i> Voltar</button></a>
+                        </div>
+                     </div>
+            </form>
         </div>
-    </div>
+  </div>
+    
 </div>
