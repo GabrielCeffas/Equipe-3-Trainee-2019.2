@@ -3,7 +3,7 @@
 namespace app\models;
 use app\core\Model;
 
-class Categoria extends Model{
+class Usuario extends Model{
     public function __construct(){
         parent::__construct();
     }
@@ -30,13 +30,14 @@ class Categoria extends Model{
         return $resultado;
     }
 
-    public function inserir($nome, $email){
-        $sql = "INSERT INTO usuario SET nome = :nome, email = :email, senha = :senha";
+    public function inserir($nome, $email, $senha, $url_imagem){
+        $sql = "INSERT INTO usuario SET nome = :nome, email = :email, senha = :senha, url_imagem = :url_imagem";
 
         $qry = $this->db->prepare($sql);
         $qry->bindValue(":nome", $nome);
         $qry->bindValue(":email", $email);
         $qry->bindValue(":senha", $senha);
+        $qry->bindValue(":url_imagem", $url_imagem);
         $qry->execute();
 
         return $this->db->lastInsertId();

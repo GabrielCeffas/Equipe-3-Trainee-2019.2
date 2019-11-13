@@ -1,6 +1,6 @@
 <?php
 namespace app\controllers;
-use app\core\Usuario;
+use app\core\Controller;
 use app\models\Usuario;
 
 class UsuarioController extends Controller{
@@ -8,7 +8,7 @@ class UsuarioController extends Controller{
     public function index() {
         $usuario = new Usuario();
 
-        $dados["usuario"] = $usuario->lista();
+        $dados["usuarios"] = $usuario->lista();
         $dados["view"] = "usuario/Index";
         $this->load("template", $dados);
     } 
