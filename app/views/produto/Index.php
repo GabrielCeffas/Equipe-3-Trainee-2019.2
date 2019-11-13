@@ -10,7 +10,10 @@
             <thead class="thead-dark">
                 <tr>
                     <th scope="col">Nome</th>
+                    <th scope="col">Preço</th>
                     <th scope="col">Descrição</th>
+                    <th scope="col">Data de Venda</th>
+                    <th scope="col">Categoria</th>
                     <th scope="col">Ação</th>
                 </tr>
             </thead>
@@ -18,9 +21,13 @@
             <?php if(is_array($produtos)){ foreach ($produtos as $produto) { ?>
                 <tr>
                     <td> <?php echo $produto->nome ?></td>
+                    <td> <?php echo $produto->preco ?></td>
                     <td> <?php echo $produto->descricao ?></td>
-                    <td><a href="/produto/editar"><button type="button" class="btn btn-outline-info btn-sm">Editar</button></a> <button type="button"
-                            class="btn btn-outline-danger"><i class="fas fa-trash-alt"></i></button></td>
+                    <td> <?php echo $produto->data_venda ?></td>
+                    <td> <?php echo $produto->categoria_id ?></td>
+                    <td>
+                        <a href="<?php echo URL_BASE . "/produto/editar/". $produto->id?>" class="btn btn-outline-info btn-sm">Editar</a>
+                        <a href="<?php echo URL_BASE . "/produto/deletar/". $produto->id?>" class="btn btn-outline-danger btn"><i class="fas fa-trash-alt"></i></a> 
                 </tr>
             <?php }} ?>
                 

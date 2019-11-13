@@ -4,7 +4,6 @@
                 <p class="font-weight-bold">Editar Produto</p>
             </h5>
             <div class="card-body">
-                <form action="<?php echo URL_BASE . "/produto/salvar" ?>" method="POST">
                     <div class="form-row">
                         <div class="form-group col-md-6">
                             <label for="name">Nome</label>
@@ -39,10 +38,10 @@
                                 <option>5</option>
                             </select>
                         </div>
+                        <a href="<?php echo URL_BASE ."cliente/deletar/" . $cliente->id . "/S" ?>"><button type="button" class="btn btn-outline-dark mr-4"><i">Excluir</i></button></a>
                         <a href="<?php echo URL_BASE ."/produto" ?>"><button type="button" class="btn btn-outline-dark mr-4"><i class="fas fa-arrow-left"></i></button></a>
-                        <input type="submit" value="Salvar" class="btn btn-outline-success mx-auto">
 
-                </form>
+            
             </div>
         </div>
     </div>

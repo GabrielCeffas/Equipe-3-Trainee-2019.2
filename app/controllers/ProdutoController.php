@@ -19,8 +19,25 @@ class ProdutoController extends Controller{
       $this->load("template", $dados);
    }
 
-   public function editar(){
+   public function editar($id){
+      $produto = new Produto();
+
+      $dados["produto"] = $produto->getProduto($id);
       $dados["view"] = "produto/Editar";
+      $this->load("template", $dados);
+   }
+
+   public function deletar($id, $excluir = NULL){
+      $produto = new Produto();
+
+      if ($excluir == "S"){
+         $produto->excluir($id);
+         header("location:" . URL_BASE . "/produto");
+         exit;
+      }
+
+      $dados["produto"] = $produto->getProduto($id);
+      $dados["view"] = "produto/Deletar";
       $this->load("template", $dados);
    }
 
@@ -35,7 +52,12 @@ class ProdutoController extends Controller{
       $data_venda = isset ($_POST["data_venda"]) ? strip_tags(filter_input(INPUT_POST, "data_venda")): NULL;
       $categoria_id = isset ($_POST["categoria_id"]) ? strip_tags(filter_input(INPUT_POST, "categoria_id")): NULL;
 
-      $produto->inserir($nome, $preco, $descricao, $url_imagem, $data_venda, $categoria_id);
+      if ($id){
+         $produto->editar($nome, $preco, $descricao, $url_imagem, $data_venda, $categoria_id);
+      }
+      else{
+         $produto->inserir($nome, $preco, $descricao, $url_imagem, $data_venda, $categoria_id);
+      }
       header("location:" . URL_BASE . "/produto");      
    }
- }
+}
