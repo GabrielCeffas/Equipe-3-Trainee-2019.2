@@ -38,10 +38,10 @@
                                 <option>5</option>
                             </select>
                         </div>
-                        <a href="<?php echo URL_BASE ."cliente/deletar/" . $cliente->id . "/S" ?>"><button type="button" class="btn btn-outline-dark mr-4"><i">Excluir</i></button></a>
+                        <input type="hidden" name="id" value="<?php echo $produto->id?>">
                         <a href="<?php echo URL_BASE ."/produto" ?>"><button type="button" class="btn btn-outline-dark mr-4"><i class="fas fa-arrow-left"></i></button></a>
+                        <a href="<?php echo URL_BASE ."cliente/deletar/" . $cliente->id . "/S" ?>"><button type="button" class="btn btn-outline-dark mr-4"><i">Excluir</i></button></a>
 
-            
             </div>
         </div>
     </div>

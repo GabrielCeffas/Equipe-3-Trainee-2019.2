@@ -39,6 +39,7 @@
                                 <option>5</option>
                             </select>
                         </div>
+                        <input type="hidden" name="id" value="<?php echo $produto->id?>">
                         <a href="<?php echo URL_BASE ."/produto" ?>"><button type="button" class="btn btn-outline-dark mr-4"><i class="fas fa-arrow-left"></i></button></a>
                         <input type="submit" value="Salvar" class="btn btn-outline-success mx-auto">
 

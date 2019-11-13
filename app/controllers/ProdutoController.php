@@ -53,7 +53,7 @@ class ProdutoController extends Controller{
       $categoria_id = isset ($_POST["categoria_id"]) ? strip_tags(filter_input(INPUT_POST, "categoria_id")): NULL;
 
       if ($id){
-         $produto->editar($nome, $preco, $descricao, $url_imagem, $data_venda, $categoria_id);
+         $produto->editar($id, $nome, $preco, $descricao, $url_imagem, $data_venda, $categoria_id);
       }
       else{
          $produto->inserir($nome, $preco, $descricao, $url_imagem, $data_venda, $categoria_id);
