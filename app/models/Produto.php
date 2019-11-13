@@ -65,4 +65,10 @@ class Produto extends Model {
         $qry->bindValue(":id", $id);
         $qry->execute();
     }
+
+    public function resultado($pesquisar){
+        $sql = "SELECT * FROM produto WHERE nome LIKE '%$pesquisar%'";
+        $qry = $this->db->query($sql);
+        return $qry->fetchAll(\PDO::FETCH_OBJ);
+    }
 }

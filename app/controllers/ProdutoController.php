@@ -60,4 +60,14 @@ class ProdutoController extends Controller{
       }
       header("location:" . URL_BASE . "/produto");      
    }
+
+   public function pesquisar(){
+      $produto = new Produto();
+
+      $pesquisar = isset ($_POST["produto_pesquisar"]) ? strip_tags(filter_input(INPUT_POST, "produto_pesquisar")): NULL;
+
+      $dados["produtos"] = $produto->resultado ($pesquisar);
+      $dados["view"] = "produto/Pesquisar";
+      $this->load("template", $dados);
+  }
 }
