@@ -12,14 +12,13 @@
 
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/101f0cf20a.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
    <header>
        <?php
             include 'navbar.html'; 
-        ?>
+            ?>
    </header>
     <div class="container mt-3">
         <div class="d-flex justify-content-between">
@@ -50,8 +49,9 @@
                     <th scope="row">2</th>
                     <td>Brinco</td>
                     <td>Descrição do produto</td>
-                    <td><button type="button" class="btn btn-outline-info btn-sm">Editar</button> <button type="button"
-                            class="btn btn-outline-danger"><i class="fas fa-trash-alt"></i></button></td>
+                    <td><button type="button" class="btn btn-outline-info btn-sm">Editar</button> 
+                        <button type="button"class="btn btn-outline-danger"><i class="fas fa-trash-alt"></i></button>
+                    </td>
                 </tr>
                 <tr>
                     <th scope="row">3</th>
@@ -74,6 +74,7 @@
     </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://kit.fontawesome.com/101f0cf20a.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
