@@ -57,12 +57,13 @@ class CategoriaController extends Controller{
 
     public function pesquisar(){
         $categoria = new Categoria();
-
         $pesquisar = isset($_POST["categoria_pesquisar"]) ? strip_tags(filter_input(INPUT_POST, "categoria_pesquisar")): NULL;
 
         $dados["categorias"] = $categoria->resultado($pesquisar);
         $dados["view"] = "categoria/Pesquisar";
+        
         $this->load("template", $dados);
+
     }
 
 }
