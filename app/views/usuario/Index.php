@@ -1,9 +1,5 @@
 <div class="container mt-3">
     <div class="d-flex justify-content-between">
-        <form class="form-inline search-crud my-2 my-lg-0" method="POST" action="<?php echo URL_BASE ."/usuario/pesquisar"?>">
-            <input class="form-control mr-sm-2" type="search" name="usuario_pesquisar" placeholder="buscar..." aria-label="Search">
-            <button class="btn btn-outline-dark" type="submit"><i class="fas fa-search"></i></button>
-        </form>
         <a href="<?php echo URL_BASE ."/usuario/novo" ?>"><button type="button" class="btn btn-outline-success">Novo Usuario</button></a>
     </div>
     <table class="table mt-3 text-center">
@@ -11,6 +7,7 @@
             <tr>
                 <th scope="col">Nome</th>
                 <th scope="col">Email</th>
+                <th scope="col">Senha</th>
                 <th scope="col">Ação</th>
             </tr>
         </thead>
@@ -20,6 +17,7 @@
             <tr>
                     <td><?php echo $usuario->nome ?></td>
                     <td><?php echo $usuario->email ?></td>
+                    <td><?php echo $usuario->senha ?></td>
                     <td>
                         <a href="<?php echo URL_BASE ."/usuario/editar/". $usuario->id?>" class="btn btn-outline-info btn-sm">Editar</a>
                         <a href="<?php echo URL_BASE ."/usuario/apagar/". $usuario->id?>" class="btn btn-outline-danger"><i class="fas fa-trash-alt"></i></a>

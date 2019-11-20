@@ -56,14 +56,4 @@ class UsuarioController extends Controller{
     header("location:" . URL_BASE ."/usuario");
     }
 
-    public function pesquisar(){
-        $categoria = new Usuario();
-
-        $pesquisar = isset($_POST["usuario_pesquisar"]) ? strip_tags(filter_input(INPUT_POST, "usuario_pesquisar")): NULL;
-
-        $dados["usuarios"] = $usuario->resultado($pesquisar);
-        $dados["view"] = "usuario/Pesquisar";
-        $this->load("template", $dados);
-    }
-
 }

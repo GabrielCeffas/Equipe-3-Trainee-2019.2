@@ -44,12 +44,13 @@ class Usuario extends Model{
     }
 
     public function editar($id, $nome, $email){
-        $sql = "UPDATE usuario SET nome = :nome, email = :email, senha = :senha WHERE id = :id";
+        $sql = "UPDATE usuario SET nome = :nome, email = :email, senha = :senha, url_imagem = :url_imagem WHERE id = :id";
 
         $qry = $this->db->prepare($sql);
         $qry->bindValue(":nome", $nome);
         $qry->bindValue(":email", $email);
         $qry->bindValue(":senha", $senha);
+        $qry->bindValue(":url_imagem", $url_imagem);
         $qry->bindValue(":id", $id);
         $qry->execute();
     }
@@ -62,11 +63,5 @@ class Usuario extends Model{
         $qry->execute();
 
     }
-
-    public function resultado($pesquisar){
-        $sql = "SELECT * FROM usuario WHERE nome LIKE '%$pesquisar%'";
-        $qry = $this->db->query($sql);
-        return $qry->fetchAll(\PDO::FETCH_OBJ);
-    }
-    
+ 
 }
