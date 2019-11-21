@@ -1,35 +1,35 @@
 <div class="container mt-3">
     <div class="d-flex justify-content-between">
-        <form class="form-inline search-crud my-2 my-lg-0" method="POST" action="<?php echo URL_BASE ."/categoria/pesquisar"?>">
+        <form class="form-inline search-crud my-2 my-lg-0" method="GET" action="<?php echo URL_BASE . "/categoria/pesquisar" ?>">
             <input class="form-control mr-sm-2" type="search" name="categoria_pesquisar" placeholder="buscar..." aria-label="Search">
             <button class="btn btn-outline-dark" type="submit"><i class="fas fa-search"></i></button>
         </form>
-        <a href="<?php echo URL_BASE ."/categoria/novo" ?>"><button type="button" class="btn btn-outline-success">Nova Categoria</button></a>
+        <a href="<?php echo URL_BASE . "/categoria/novo" ?>"><button type="button" class="btn btn-outline-success">Nova Categoria</button></a>
     </div>
-    <table class="table mt-3 text-center">
+    <table class="table">
         <thead class="thead-dark">
             <tr>
                 <th scope="col">Nome</th>
-                <th scope="col">Descrição</th>
                 <th scope="col">Ação</th>
             </tr>
         </thead>
         <tbody>
-            
-            <?php if(is_array($categorias)){ foreach ($categorias as $categoria) { ?>
-            <tr>
-                    <td><?php echo $categoria->nome ?></td>
-                    <td><?php echo $categoria->descricao ?></td>
-                    <td>
-                        <a href="<?php echo URL_BASE ."/categoria/editar/". $categoria->id?>" class="btn btn-outline-info btn-sm">Editar</a>
-                        <a href="<?php echo URL_BASE ."/categoria/apagar/". $categoria->id?>" class="btn btn-outline-danger"><i class="fas fa-trash-alt"></i></a>
-                    </td>
-                </tr>
-            <?php }} ?>
+
+            <?php if (is_array($categorias)) {
+                foreach ($categorias as $categoria) { ?>
+                    <tr>
+                        <td><?php echo $categoria->nome ?></td>
+                        <td>
+                            <a href="<?php echo URL_BASE . "/categoria/editar/" . $categoria->id ?>" class="btn btn-outline-info btn-sm">Editar</a>
+                            <a href="<?php echo URL_BASE . "/categoria/apagar/" . $categoria->id ?>" class="btn btn-outline-danger"><i class="fas fa-trash-alt"></i></a>
+                        </td>
+                    </tr>
+            <?php }
+            } ?>
         </tbody>
     </table>
-    
-    <a href="<?php echo URL_BASE ."/administrativo" ?>"><button type="button" class="btn btn-outline-dark"><i class="fas fa-arrow-left"></i> Voltar</button></a>
+
+    <a href="<?php echo URL_BASE . "/administrativo" ?>"><button type="button" class="btn btn-outline-dark"><i class="fas fa-arrow-left"></i> Voltar</button></a>
 </div>
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
