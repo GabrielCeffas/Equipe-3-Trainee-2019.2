@@ -159,3 +159,22 @@ body {
     width: 40%;
     height: auto;
 }
+
+.botao{
+    color:black!important;
+    background-color: #ffc6b3!important;
+}
+
+.botao:hover{
+    color: white!important;
+    background-color: gray!important;
+}
+
+.log{
+    text-decoration: none;
+}
+
+.log:hover{
+    text-decoration: none!important;
+}
+
