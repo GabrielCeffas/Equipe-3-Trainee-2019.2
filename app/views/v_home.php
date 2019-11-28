@@ -32,7 +32,7 @@
           <img src="<?php echo URL_BASE . "assets/img/brinco.jpg"?>" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title text-center">Brinco de diamantes</h5>
-            <p class="card-text">Descrição do produto</p>
+            <p class="card-text text-center">Descrição do produto</p>
             <a href="#" class="btn btn-outline-dark btn-lg btn-block">Ver mais</a>
           </div>
         </div>
@@ -69,3 +69,4 @@
       </div>
     </div>
   </div>
+</div>

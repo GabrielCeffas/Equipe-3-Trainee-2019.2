@@ -64,7 +64,7 @@ class ProdutoController extends Controller{
    public function pesquisar(){
       $produto = new Produto();
 
-      $pesquisar = isset ($_POST["produto_pesquisar"]) ? strip_tags(filter_input(INPUT_POST, "produto_pesquisar")): NULL;
+      $pesquisar = isset ($_GET["produto_pesquisar"]) ? strip_tags(filter_input(INPUT_GET, "produto_pesquisar")): NULL;
 
       $dados["produtos"] = $produto->resultado ($pesquisar);
       $dados["view"] = "produto/Pesquisar";

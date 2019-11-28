@@ -14,7 +14,7 @@
                     <a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="produtos.php">Produtos</a>
+                    <a class="nav-link" href="<?php echo URL_BASE . "/produtos"?>">Produtos</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="viewContato.php">Contato</a>

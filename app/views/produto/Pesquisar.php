@@ -1,6 +1,6 @@
 <div class="container mt-3">
     <div class="d-flex justify-content-between">
-        <form class="form-inline search-crud my-2 my-lg-0" method="POST" action="<?php echo URL_BASE ."/produto/pesquisar"?>">
+        <form class="form-inline search-crud my-2 my-lg-0" method="GET" action="<?php echo URL_BASE ."/produto/pesquisar"?>">
         <input class="form-control mr-sm-2" type="search" name="produto_pesquisar" placeholder="buscar..." aria-label="Search">
         <button class="btn btn-outline-dark" type="submit"><i class="fas fa-search"></i></button>
         </form>
