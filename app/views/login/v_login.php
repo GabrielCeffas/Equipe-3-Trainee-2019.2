@@ -1,49 +1,32 @@
-<div class="d-flex container-fluid justify-content-center align-items-center">
-    <div class="card mt-5">
-
-        <div class="card-header text-center">
-            <h3>Login administrador</h3>
-        </div>
-
-        <div class="card-body">
-
-            <form>
-                <div class="input-group form-group">
-                    <div class="input-group-prepend">
-                        <span class="input-group-text"><i class="fas fa-user"></i></span>
+<?php session_start() ?>
+<section class="hero is-sucess is fullheight">
+    <div class="d-flex container-fluid justify-content-center align-items-center">
+        <div class="card mt-5">
+            <div class="card-header text-center">
+                <h4>Login administrador</h4>
+            </div>
+            <div class="card-body">
+                <form action="<?php echo URL_BASE . "/login/valida" ?>" method="POST">
+                    <div class="input-group form-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="fas fa-user"></i></span>
+                        </div>
+                        <input name="login_email" type="TEXT" class="form-control" placeholder="email">
                     </div>
-                    <input type="text" class="form-control" placeholder="usuario">
-                </div>
-                <div class="input-group form-group">
-                    <div class="input-group-prepend">
-                        <span class="input-group-text"><i class="fas fa-key"></i></span>
+                    <div class="input-group form-group">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text"><i class="fas fa-key"></i></span>
+                        </div>
+                        <input name="login_senha" type="password" class="form-control" placeholder="senha">
                     </div>
-                    <input type="password" class="form-control" placeholder="senha">
-                </div>
-                <div class="row align-items-center remember">
-                    <input type="checkbox">Lembrar usuario
-                </div>
-                <div class="form-group">
-
-                </div>
-
-            </form>
-        </div>
-
-        <div class="card-footer">
-
-            <a href="<?php echo URL_BASE . "/administrativo" ?>">
-                <div class="d-flex justify-content-center adm">
-                    <input type="submit" value="Entrar" class="btn log">
-                </div>
-            </a>
-
+                    <input type="submit" value="Entrar" class="btn  btn-outline-dark log">
+                </form>
+            </div>
+            <div class="card-footer">
+            </div>
         </div>
     </div>
-</div>
-
-
-
+</section>
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

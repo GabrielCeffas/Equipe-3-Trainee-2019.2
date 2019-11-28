@@ -1,5 +1,5 @@
 <div class="container">
-  <h1 class="conheca text-center mt-4 mb-4" id="conheca">Contato</h1>
+  <h1 class="conheca text-center mt-4 mb-4" id="conheca">Fale Conosco!</h1>
   <div class="row">
     <div class="col-sm text-center">
       <div class="iframe-container">
@@ -7,39 +7,36 @@
       </div>
     </div>
     <div class="col-sm">
-      <form>
+      <form class="form-group" action="<?php echo URL_BASE . "/contato/salvar" ?>" method="POST">
         <div class="form-group">
           <label for="exampleFormControlInput1">Email de contato</label>
-          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="seuemail@exemplo.com">
+          <input name="c_email" type="email" class="form-control" id="exampleFormControlInput1" placeholder="seuemail@exemplo.com">
         </div>
         <div class="form-group">
-          <label for="exampleFormControlSelect1">Nome do usuario</label>
-          <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Digite seu nome">
-          </select>
+          <label for="exampleFormControlSelect1">Seu nome</label>
+          <input name="c_nome" type="text" class="form-control" id="formGroupExampleInput" placeholder="Digite seu nome">
         </div>
         <div class="form-group">
           <label for="exampleFormControlSelect2">Assunto</label>
-          <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Digite assunto">
-          </select>
+          <input name="c_assunto" type="text" class="form-control" id="formGroupExampleInput" placeholder="Digite assunto">
         </div>
         <div class="form-group">
           <label for="exampleFormControlTextarea1">Comentario</label>
-          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Digite um comentario"></textarea>
+          <textarea name="c_coment" class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Digite um comentario"></textarea>
         </div>
         <button type="submit" class="botao btn btn-primary mb-2">Enviar <i class="fas fa-paper-plane"></i></button>
       </form>
     </div>
   </div>
   <h4>
-    <p class="text-center"><i class="fas fa-map-marked-alt"></i><strong>Endereço:</strong></p>
+    <p class="text-center"><i class="fas fa-map-marked-alt"></i><strong> Endereço:</strong></p>
   </h4>
-  <p class="text-center">Independência Shopping</p>
-  <p class="text-center">Av. Presidente Itamar Franco</p>
-  <p class="text-center">N°:3600/loja:1001</p>
-  <p class="text-center">Cascatinha</p>
-  <p class="text-center">Juiz de Fora</p>
-  <p class="text-center">CEP: 36052-290</p>
-  <p class="text-center">(32)4002-8922</p>
+  <p class="text-center">Independência Shopping<br>
+    Av. Presidente Itamar Franco<br>
+    N°: 3600/Loja: 1001<br>
+    Cascatinha - Juiz de Fora<br>
+    CEP: 36052-290<br>
+    (32)4002-8922</p>
 </div>
 
 <!-- Optional JavaScript -->

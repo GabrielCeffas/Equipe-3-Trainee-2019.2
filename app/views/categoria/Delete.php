@@ -6,11 +6,13 @@
         <div class="card-body">
             <div class="form-group">
                 <div class="form-group">
-                    <label for="inputname">Nome: <?php echo $categoria->nome ?></label>
+                    <label for="inputname" class="font-weight-bold">Categoria: </label><br>
+                    <?php echo $categoria->nome ?>
                 </div>
             </div>
             <div class="form-group">
-                <label for="exampleFormControlTextarea1">Descrição: <?php echo $categoria->descricao ?></label>
+                <label for="inputname" class="font-weight-bold">Descrição: </label><br>
+                <?php echo $categoria->descricao ?>
             </div>
         </div>
         <div class="col-md-6">

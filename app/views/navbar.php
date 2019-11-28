@@ -12,13 +12,13 @@
                 <a class="nav-link" href="<?php echo URL_BASE ?>">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="<?php echo URL_BASE . "/ViewProduto" ?>">Produtos</a>
+                <a class="nav-link" href="<?php echo URL_BASE . "/viewproduto" ?>">Produtos</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="<?php echo URL_BASE . "/Contato" ?>">Contato</a>
+                <a class="nav-link" href="<?php echo URL_BASE . "/contato" ?>">Contato</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="<?php echo URL_BASE . "/QuemSomos" ?>">Quem Somos</a>
+                <a class="nav-link" href="<?php echo URL_BASE . "/quemsomos" ?>">Quem Somos</a>
             </li>
         </ul>
         <form class="form-inline my-2 my-lg-0">

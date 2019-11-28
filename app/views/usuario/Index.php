@@ -1,27 +1,25 @@
 <div class="container mt-3">
     <div class="d-flex justify-content-between">
-        <form class="form-inline search-crud my-2 my-lg-0" method="GET" action="<?php echo URL_BASE . "/categoria/pesquisar" ?>">
-            <input class="form-control mr-sm-2" type="search" name="categoria_pesquisar" placeholder="buscar..." aria-label="Search">
-            <button class="btn btn-outline-dark" type="submit"><i class="fas fa-search"></i></button>
-        </form>
-        <a href="<?php echo URL_BASE . "/categoria/novo" ?>"><button type="button" class="btn btn-outline-success">Nova Categoria</button></a>
+        <a href="<?php echo URL_BASE . "/usuario/novo" ?>"><button type="button" title="Novo Usuario" class="btn btn-outline-success"><i class="fas fa-user-plus"></i></button></a>
     </div>
-    <table class="table text-center mt-3">
+    <table class="table mt-3 text-center">
         <thead class="thead-dark">
             <tr>
                 <th scope="col">Nome</th>
+                <th scope="col">Email</th>
                 <th scope="col">Ação</th>
             </tr>
         </thead>
         <tbody>
 
-            <?php if (is_array($categorias)) {
-                foreach ($categorias as $categoria) { ?>
+            <?php if (is_array($usuarios)) {
+                foreach ($usuarios as $usuario) { ?>
                     <tr>
-                        <td><?php echo $categoria->nome ?></td>
+                        <td><?php echo $usuario->nome ?></td>
+                        <td><?php echo $usuario->email ?></td>
                         <td>
-                            <a href="<?php echo URL_BASE . "/categoria/editar/" . $categoria->id ?>" title="Editar" class="btn btn-outline-info"><i class="fas fa-edit"></i></a>
-                            <a href="<?php echo URL_BASE . "/categoria/apagar/" . $categoria->id ?>" class="btn btn-outline-danger"><i class="fas fa-trash-alt"></i></a>
+                            <a href="<?php echo URL_BASE . "/usuario/editar/" . $usuario->id ?>" title="Editar" class="btn btn-outline-info mb-2"><i class="fas fa-user-edit"></i></a>
+                            <a href="<?php echo URL_BASE . "/usuario/apagar/" . $usuario->id ?>" title="Apagar" class="btn btn-outline-danger mb-2"><i class="fas fa-trash-alt"></i></a>
                         </td>
                     </tr>
             <?php }

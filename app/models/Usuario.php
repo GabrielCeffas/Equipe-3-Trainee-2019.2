@@ -4,7 +4,7 @@ namespace app\models;
 
 use app\core\Model;
 
-class Categoria extends Model
+class Usuario extends Model
 {
     public function __construct()
     {
@@ -13,15 +13,15 @@ class Categoria extends Model
 
     public function lista()
     {
-        $sql = "SELECT * FROM categoria";
+        $sql = "SELECT * FROM usuario";
         $qry = $this->db->query($sql);
         return $qry->fetchAll(\PDO::FETCH_OBJ);
     }
 
-    public function getCategoria($id)
+    public function getUsuario($id)
     {
         $resultado = array();
-        $sql = "SELECT * FROM categoria WHERE id = :id";
+        $sql = "SELECT * FROM usuario WHERE id = :id";
 
         $qry = $this->db->prepare($sql);
         $qry->bindValue(":id", $id);
@@ -34,42 +34,39 @@ class Categoria extends Model
         return $resultado;
     }
 
-    public function inserir($nome, $descricao)
+    public function inserir($nome, $email, $senha, $url_imagem)
     {
-        $sql = "INSERT INTO categoria SET nome = :nome, descricao = :descricao";
+        $sql = "INSERT INTO usuario SET nome = :nome, email = :email, senha = :senha, url_imagem = :url_imagem";
 
         $qry = $this->db->prepare($sql);
         $qry->bindValue(":nome", $nome);
-        $qry->bindValue(":descricao", $descricao);
+        $qry->bindValue(":email", $email);
+        $qry->bindValue(":senha", $senha);
+        $qry->bindValue(":url_imagem", $url_imagem);
         $qry->execute();
 
         return $this->db->lastInsertId();
     }
 
-    public function editar($id, $nome, $descricao)
+    public function editar($id, $nome, $email, $senha, $url_imagem)
     {
-        $sql = "UPDATE categoria SET nome = :nome, descricao = :descricao WHERE id = :id";
+        $sql = "UPDATE usuario SET nome = :nome, email = :email, senha = :senha, url_imagem = :url_imagem WHERE id = :id";
 
         $qry = $this->db->prepare($sql);
         $qry->bindValue(":nome", $nome);
-        $qry->bindValue(":descricao", $descricao);
+        $qry->bindValue(":email", $email);
+        $qry->bindValue(":senha", $senha);
+        $qry->bindValue(":url_imagem", $url_imagem);
         $qry->bindValue(":id", $id);
         $qry->execute();
     }
 
     public function excluir($id)
     {
-        $sql = "DELETE FROM categoria WHERE id = :id";
+        $sql = "DELETE FROM usuario WHERE id = :id";
 
         $qry = $this->db->prepare($sql);
         $qry->bindValue(":id", $id);
         $qry->execute();
-    }
-
-    public function resultado($pesquisar)
-    {
-        $sql = "SELECT * FROM categoria WHERE nome LIKE '%$pesquisar%'";
-        $qry = $this->db->query($sql);
-        return $qry->fetchAll(\PDO::FETCH_OBJ);
     }
 }

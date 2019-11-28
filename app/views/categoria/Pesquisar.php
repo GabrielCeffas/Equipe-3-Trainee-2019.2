@@ -20,7 +20,7 @@
                     <tr>
                         <td><?php echo $categoria->nome ?></td>
                         <td>
-                            <a href="<?php echo URL_BASE . "/categoria/editar/" . $categoria->id ?>" class="btn btn-outline-info btn-sm">Editar</a>
+                            <a href="<?php echo URL_BASE . "/categoria/editar/" . $usuario->id ?>" title="Editar" class="btn btn-outline-info"><i class="fas fa-edit"></i></a>
                             <a href="<?php echo URL_BASE . "/categoria/apagar/" . $categoria->id ?>" class="btn btn-outline-danger"><i class="fas fa-trash-alt"></i></a>
                         </td>
                     </tr>
