@@ -1,4 +1,5 @@
-<div class="container">
+ 
+    <div class="container">
       <div>  
         <h1 class="conheca text-center mt-4" id="conheca">Nossos Produtos</h1>
         <div class="row">
@@ -15,7 +16,7 @@
                 <option value="brincos">Brincos</option>
                 <option value="pulseiras">Pulseiras</option>
                 <option value="aneis">Anéis</option>
-                <option value="colar">Colár</option>
+                <option value="colar">Colar</option>
               </select>
               <div class="input-group-append">
                 <button class="btn btn-outline-secondary" type="button"><i class="fas fa-sync-alt"></i></button>
@@ -35,8 +36,24 @@
             </div>
         </div>
         <div class="col-md-9 produto padding mt-5">
-            <p id="produto"><h2>Nenhum produto encontrado!</h2></p>
+        <div class="container ct-home mt-3">
+    <div class="row">
+    <?php if(is_array($produtos)){ foreach ($produtos as $produto) { ?>
+      <div class="col-lg-4 col-md-6 mb-3">
+        <div class="card">
+          <img src="<?php echo $produto->url_imagem ?>" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title text-center"><?php echo $produto->nome ?></h5>
+            <p class="card-text text-center"><?php echo $produto->descricao ?></p>
+            <a href="#" class="btn btn-outline-dark btn-lg btn-block">Ver mais</a>
+          </div>
+        </div>
+      </div>
+      <?php }} ?>
+      
+    </div>
         </div>
         </div>
       </div>
     </div>
+</div>
