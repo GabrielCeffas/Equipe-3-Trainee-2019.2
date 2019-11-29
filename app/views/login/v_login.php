@@ -6,7 +6,7 @@
                 <h4>Login administrador</h4>
             </div>
             <div class="card-body">
-                <form action="<?php echo URL_BASE . "/login/valida" ?>" method="POST">
+                <form action="<?php echo URL_BASE . "/login/login" ?>" method="POST">
                     <div class="input-group form-group">
                         <div class="input-group-prepend">
                             <span class="input-group-text"><i class="fas fa-user"></i></span>

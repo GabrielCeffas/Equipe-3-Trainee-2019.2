@@ -69,4 +69,17 @@ class Usuario extends Model
         $qry->bindValue(":id", $id);
         $qry->execute();
     }
+
+    public function login ($email, $senha)
+    {
+        $sql = "SELECT nome FROM usuario WHERE email = :email AND senha = :senha";
+        $qry = $this->db->prepare($sql);
+        $qry->bindParam(':email', $email);
+        $qry->bindParam(':senha', $senha);
+        $qry->execute();
+
+        $usuario = $qry->fetch(\PDO::FETCH_ASSOC);
+
+        return $usuario;
+    }
 }

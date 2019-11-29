@@ -42,7 +42,7 @@
         </div>
     </div>
     <div class="mt-5 col-md-4 mb-3">
-        <button type="button" class="btn btn-outline-dark">Logout</button>
+        <a href="<?php echo URL_BASE . "/login/logout" ?>"><button type="button" class="btn btn-outline-dark">Logout</button></a>
     </div>
 </div>
 
