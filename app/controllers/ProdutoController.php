@@ -14,7 +14,9 @@ class ProdutoController extends Controller{
        $dados["produtos"] = $produto->lista();
        $dados["view"] = "produto/Index";
 
-       $this->load("template", $dados);
+       if(require('./app/functions/loginCheck.php')){
+         $this->load("template", $dados);
+     }
    }
    
    public function novo(){
@@ -22,7 +24,9 @@ class ProdutoController extends Controller{
       
       $dados["categorias"] = $categoria->lista();
       $dados["view"] = "produto/Criar";
-      $this->load("template", $dados);
+      if(require('./app/functions/loginCheck.php')){
+         $this->load("template", $dados);
+     }
    }
 
    public function editar($id){
@@ -32,7 +36,9 @@ class ProdutoController extends Controller{
       $dados["produto"] = $produto->getProduto($id);
       $dados["categorias"] = $categoria->lista();
       $dados["view"] = "produto/Editar";
-      $this->load("template", $dados);
+      if(require('./app/functions/loginCheck.php')){
+         $this->load("template", $dados);
+     }
    }
 
    public function apagar($id, $excluir = NULL){
@@ -46,7 +52,9 @@ class ProdutoController extends Controller{
 
       $dados["produto"] = $produto->getProduto($id);
       $dados["view"] = "produto/Deletar";
-      $this->load("template", $dados);
+      if(require('./app/functions/loginCheck.php')){
+         $this->load("template", $dados);
+     }
    }
 
    public function salvar(){
@@ -76,7 +84,9 @@ class ProdutoController extends Controller{
 
       $dados["produtos"] = $produto->resultado ($pesquisar);
       $dados["view"] = "produto/Pesquisar";
-      $this->load("template", $dados);
+      if(require('./app/functions/loginCheck.php')){
+         $this->load("template", $dados);
+     }
   }
 
   public function view_produto(){

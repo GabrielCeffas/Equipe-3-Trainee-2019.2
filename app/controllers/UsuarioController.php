@@ -14,13 +14,17 @@ class UsuarioController extends Controller
 
         $dados["usuarios"] = $usuario->lista();
         $dados["view"] = "usuario/Index";
-        $this->load("template", $dados);
+        if(require('./app/functions/loginCheck.php')){
+            $this->load("template", $dados);
+        }
     }
 
     public function novo()
     {
         $dados["view"] = "usuario/Criar";
-        $this->load("template", $dados);
+        if(require('./app/functions/loginCheck.php')){
+            $this->load("template", $dados);
+        }
     }
 
     public function editar($id)
@@ -29,7 +33,9 @@ class UsuarioController extends Controller
 
         $dados["usuario"] = $usuario->getUsuario($id);
         $dados["view"] = "usuario/Editar";
-        $this->load("template", $dados);
+        if(require('./app/functions/loginCheck.php')){
+            $this->load("template", $dados);
+        }
     }
 
     public function apagar($id, $excluir = NULL)
@@ -42,7 +48,9 @@ class UsuarioController extends Controller
         }
         $dados["usuario"] = $usuario->getUsuario($id);
         $dados["view"] = "usuario/Delete";
-        $this->load("template", $dados);
+        if(require('./app/functions/loginCheck.php')){
+            $this->load("template", $dados);
+        }
     }
 
     public function salvar()

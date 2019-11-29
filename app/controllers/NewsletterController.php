@@ -10,6 +10,8 @@ class NewsLetterController extends Controller
     public function index()
     {
         $dados["view"] = "Newsletter/index";
-        $this->load("template", $dados);
+        if(require('./app/functions/loginCheck.php')){
+            $this->load("template", $dados);
+        }
     }
 }

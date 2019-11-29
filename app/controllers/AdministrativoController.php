@@ -6,6 +6,8 @@ class AdministrativoController extends Controller{
     
    public function index(){
         $dados["view"] = "administrativo/v_adm";
-        $this->load("template", $dados);
+        if(require('./app/functions/loginCheck.php')){
+         $this->load("template", $dados);
+     }
    } 
 }

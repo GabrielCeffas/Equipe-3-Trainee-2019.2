@@ -11,7 +11,9 @@ class ContatoController extends Controller
     public function index()
     {
         $dados["view"] = "contatos/v_contato";
-        $this->load("template", $dados);
+        if(require('./app/functions/loginCheck.php')){
+            $this->load("template", $dados);
+        }
     }
 
     public function recebidos()
@@ -20,7 +22,9 @@ class ContatoController extends Controller
 
         $dados["contatos"] = $contato->lista();
         $dados["view"] = "contatos/index";
-        $this->load("template", $dados);
+        if(require('./app/functions/loginCheck.php')){
+            $this->load("template", $dados);
+        }
     }
 
     public function visualizar($id)
@@ -29,7 +33,9 @@ class ContatoController extends Controller
 
         $dados["contato"] = $contato->getContato($id);
         $dados["view"] = "contatos/ver";
-        $this->load("template", $dados);
+        if(require('./app/functions/loginCheck.php')){
+            $this->load("template", $dados);
+        }
     }
 
     public function apagar($id, $excluir = NULL)

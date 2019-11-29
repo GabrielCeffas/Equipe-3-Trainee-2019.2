@@ -1,4 +1,4 @@
-<?php session_start() ?>
+
 <div class="container text-center">
     <div class="mt-4">
         <h1>Bem Vindo a Home Administrativa!</h1>
