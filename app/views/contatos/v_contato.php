@@ -3,8 +3,15 @@
   <div class="row">
     <div class="col-sm text-center">
       <div class="iframe-container">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7409.968154982964!2d-43.358822190862966!3d-21.780877245266694!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb6ffa6ed3a5e43ac!2sIndepend%C3%AAncia%20Shopping!5e0!3m2!1spt-BR!2sbr!4v1569341060201!5m2!1spt-BR!2sbr" width="550" height="530" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-      </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7409.968154982964!2d-43.358822190862966!3d-21.780877245266694!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb6ffa6ed3a5e43ac!2sIndepend%C3%AAncia%20Shopping!5e0!3m2!1spt-BR!2sbr!4v1569341060201!5m2!1spt-BR!2sbr" width="450" height="530" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+        </div>
+        <h4><p class="text-center"><i class="fas fa-map-marked-alt"></i><strong> Endereço:</strong></p></h4>
+  <p class="text-center">Independência Shopping<br>
+  Av. Presidente Itamar Franco<br>
+  N°: 3600/Loja: 1001<br>
+  Cascatinha - Juiz de Fora<br>
+  CEP: 36052-290<br>
+  (32)4002-8922</p>
     </div>
     <div class="col-sm">
       <form class="form-group" action="<?php echo URL_BASE . "/contato/salvar" ?>" method="POST">
@@ -28,15 +35,6 @@
       </form>
     </div>
   </div>
-  <h4>
-    <p class="text-center"><i class="fas fa-map-marked-alt"></i><strong> Endereço:</strong></p>
-  </h4>
-  <p class="text-center">Independência Shopping<br>
-    Av. Presidente Itamar Franco<br>
-    N°: 3600/Loja: 1001<br>
-    Cascatinha - Juiz de Fora<br>
-    CEP: 36052-290<br>
-    (32)4002-8922</p>
 </div>
 
 <!-- Optional JavaScript -->

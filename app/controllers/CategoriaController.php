@@ -11,16 +11,20 @@ class CategoriaController extends Controller
     public function index()
     {
         $categoria = new Categoria();
-
         $dados["categorias"] = $categoria->lista();
         $dados["view"] = "categoria/Index";
-        $this->load("template", $dados);
+
+        if(require('./app/functions/loginCheck.php')){
+            $this->load("template", $dados);
+        }
     }
 
     public function novo()
     {
         $dados["view"] = "categoria/Criar";
-        $this->load("template", $dados);
+        if(require('./app/functions/loginCheck.php')){
+            $this->load("template", $dados);
+        }
     }
 
     public function editar($id)
@@ -29,7 +33,9 @@ class CategoriaController extends Controller
 
         $dados["categoria"] = $categoria->getCategoria($id);
         $dados["view"] = "categoria/Editar";
-        $this->load("template", $dados);
+        if(require('./app/functions/loginCheck.php')){
+            $this->load("template", $dados);
+        }
     }
 
     public function apagar($id, $excluir = NULL)
@@ -42,7 +48,9 @@ class CategoriaController extends Controller
         }
         $dados["categoria"] = $categoria->getCategoria($id);
         $dados["view"] = "categoria/Delete";
-        $this->load("template", $dados);
+        if(require('./app/functions/loginCheck.php')){
+            $this->load("template", $dados);
+        }
     }
 
     public function salvar()
@@ -70,6 +78,8 @@ class CategoriaController extends Controller
         $dados["categorias"] = $categoria->resultado($pesquisar);
         $dados["view"] = "categoria/Pesquisar";
 
-        $this->load("template", $dados);
+        if(require('./app/functions/loginCheck.php')){
+            $this->load("template", $dados);
+        }
     }
 }

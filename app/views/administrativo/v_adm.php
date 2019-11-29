@@ -1,4 +1,4 @@
-<?php session_start() ?>
+
 <div class="container text-center">
     <div class="mt-4">
         <h1>Bem Vindo a Home Administrativa!</h1>
@@ -42,7 +42,7 @@
         </div>
     </div>
     <div class="mt-5 col-md-4 mb-3">
-        <a href="<?php echo URL_BASE ?>"><button type="button" class="btn btn-outline-dark"><i class="fas fa-arrow-left"></i> Sair da Página Administrativa</button></a>
+        <a href="<?php echo URL_BASE . "/login/logout" ?>"><button type="button" class="btn btn-outline-dark">Logout</button></a>
     </div>
 </div>
 

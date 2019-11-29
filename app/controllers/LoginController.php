@@ -3,7 +3,7 @@
 namespace app\controllers;
 
 use app\core\Controller;
-use app\models\Login;
+use app\models\Usuario;
 
 class LoginController extends Controller
 {
@@ -14,12 +14,23 @@ class LoginController extends Controller
       $this->load("template", $dados);
    }
 
-   public function valida()
-   {
-      $login = new Login();
 
-      $dados["logins"] = $login->lista();
-      $dados["view"] = "login/valida";
-      $this->load("template", $dados);
+   public function login(){
+      $usuario = new Usuario();
+      $login = $usuario->login($_POST["login_email"], $_POST["login_senha"]);
+      if($login>0){
+         session_start();
+         $_SESSION['login'] = true;
+         $_SESSION['nome'] = $login;
+         header("location:" . URL_BASE . "/administrativo");
+      }
+      else
+         header("location:" . URL_BASE . "/login");
+   }
+
+   public function logout(){
+      session_start();
+      session_destroy();
+      header("location:" . URL_BASE);
    }
 }

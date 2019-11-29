@@ -12,7 +12,7 @@
                 <a class="nav-link" href="<?php echo URL_BASE ?>">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="<?php echo URL_BASE . "/viewproduto" ?>">Produtos</a>
+                <a class="nav-link" href="<?php echo URL_BASE . "/produto/view_produto" ?>">Produtos</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="<?php echo URL_BASE . "/contato" ?>">Contato</a>
