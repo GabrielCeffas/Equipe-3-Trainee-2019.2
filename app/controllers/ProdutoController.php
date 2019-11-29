@@ -2,12 +2,15 @@
 namespace app\controllers;
 use app\core\Controller;
 use app\models\Produto;
+use app\models\Categoria;
 
 class ProdutoController extends Controller{
     
    public function index(){
        $produto = new Produto();
-
+       $categoria = new Categoria();
+      
+      $dados["categorias"] = $categoria->lista();
        $dados["produtos"] = $produto->lista();
        $dados["view"] = "produto/Index";
 
@@ -15,14 +18,19 @@ class ProdutoController extends Controller{
    }
    
    public function novo(){
+      $categoria = new Categoria();
+      
+      $dados["categorias"] = $categoria->lista();
       $dados["view"] = "produto/Criar";
       $this->load("template", $dados);
    }
 
    public function editar($id){
       $produto = new Produto();
-
+      $categoria = new Categoria();
+      
       $dados["produto"] = $produto->getProduto($id);
+      $dados["categorias"] = $categoria->lista();
       $dados["view"] = "produto/Editar";
       $this->load("template", $dados);
    }
@@ -78,4 +86,5 @@ class ProdutoController extends Controller{
    $dados["view"] = "ViewProdutos/v_produto";
    $this->load("template", $dados);
   }
+
 }

@@ -19,7 +19,7 @@
                         </div>
                         <input name="login_senha" type="password" class="form-control" placeholder="senha">
                     </div>
-                    <input type="submit" value="Entrar" class="btn  btn-outline-dark log">
+                    <button type="submit" class="botao btn btn-primary mb-2">Entrar</button>
                 </form>
             </div>
             <div class="card-footer">

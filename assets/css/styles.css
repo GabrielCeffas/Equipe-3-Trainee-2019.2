@@ -100,3 +100,132 @@ nav a:hover {
     color: #000000;
 }
 
+#qsomos
+{
+    width: 90%;
+    height: auto;
+    margin: 2%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.hist{
+        margin: 2%;
+        margin-right: 2%;
+}
+
+.histo{
+    color: #ffc6b3;
+    font-size: 40px;
+}
+
+.texto_hist{
+    font-size: 90%;
+    text-align: justify;
+}
+
+.login{
+    color: #000000;
+}
+
+.conheca{
+    background-color: #ffc6b3;
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.produto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#planejamento_estrategico {
+    width: 40%;
+    height: auto;
+}
+
+.botao{
+    color:black!important;
+    background-color: #ffc6b3!important;
+}
+
+.botao:hover{
+    color: white!important;
+    background-color: gray!important;
+}
+
+.iframe-container{
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* Ratio 16:9 ( 100%/16*9 = 56.25% ) */
+}
+.iframe-container > *{
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+
+
+
+body{
+    font-family: 'Quicksand', sans-serif!important;
+    background-image:url("img/textura15.jpg");
+}
+
+.card-body{
+    background-color:rgba(255, 255, 255, 0.24)!important;
+}
+
+.card-header{
+    background-color:#ffc6b3!important;
+}
+
+.card-footer{
+    background-color:#ffc6b3!important;
+}
+
+.card-footer i{
+    color: rgb(92, 92, 92);
+}
+
+.login_btn{
+    color: black;
+    background-color:#ffc6b3!important;
+    width: 100px;
+}
+    
+.login_btn:hover{
+    color: white!important;
+    background-color: gray!important;
+}
+
+.input-group-prepend span{
+    background-color:#ffc6b3;
+    border:0 !important;
+    }
+
+.remember input
+{
+width: 20px;
+height: 20px;
+margin-left: 15px;
+margin-right: 5px;
+}
+
+.links{
+    color: black!important;
+}

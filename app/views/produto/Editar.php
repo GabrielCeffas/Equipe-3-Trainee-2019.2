@@ -31,12 +31,10 @@
                     </div>
                     <div class="form-group col-md-6">
                         <label for="exampleFormControlSelect1">Categoria:</label>
-                        <select class="form-control" name="categoria_id" value="<?php echo $produto->categoria_id ?>" id="exampleFormControlSelect1">
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
+                        <select class="form-control" name="categoria_id" id="exampleFormControlSelect1">
+                            <?php foreach ($categorias as $categoria) { ?>
+                            <option value="<?= $categoria->id; ?>"><?php echo $categoria->nome?></option>
+                            <?php } ?>
                         </select>
                     </div>
                 </div>
