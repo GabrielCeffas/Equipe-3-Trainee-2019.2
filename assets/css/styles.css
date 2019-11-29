@@ -1,12 +1,15 @@
 body {
     font-family: 'Quicksand', sans-serif;
 }
-
+/* Navbar */
 .nav-home {
     font-size: 120%;
 }
 
-#rodape{
+/* Fim do Navbar */
+
+ /* Inicio do Rodape */
+ #rodape{
     background-color: #f1f0eb;
 }
 .row {
@@ -60,7 +63,6 @@ body {
     width: 45%;
     height: auto;
 }
-
 nav a {
     color: #000000;
 }
@@ -74,7 +76,6 @@ nav a:hover {
     text-decoration: none;
     color: #000000;
 }
-
 .adm {
     color: #000000;
     font-size: 220%;
@@ -85,7 +86,7 @@ nav a:hover {
     color: #000000;
 }
 
-:hover {
+.adm:hover {
     text-decoration: none;
     color: #000000;
 }
@@ -100,6 +101,10 @@ nav a:hover {
     color: #000000;
 }
 
+/*Fim do Rodape*/
+
+/*Inicio do Quem Somos */
+
 #qsomos
 {
     width: 90%;
@@ -109,34 +114,30 @@ nav a:hover {
     align-content: center;
     justify-content: center;
 }
-
-.hist{
-        margin: 2%;
-        margin-right: 2%;
-}
-
 .histo{
-    color: #ffc6b3;
+    color: #def8f6;
     font-size: 40px;
 }
-
+.hist{
+    margin: 2%;
+    margin-right: 2%;
+}
 .texto_hist{
     font-size: 90%;
     text-align: justify;
 }
-
-.login{
-    color: #000000;
-}
-
 .conheca{
-    background-color: #ffc6b3;
+    background-color: #def8f6;
     width: auto;
     height: auto;
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
+/*Fim do Quem Somos*/
+
+/*Inicio do Produtos */
 
 .produto{
     display: flex;
@@ -150,16 +151,18 @@ nav a:hover {
     height: auto;
 }
 
+/*Fim do Produtos*/
+
+/*Inicio do Contatos */
+
 .botao{
     color:black!important;
-    background-color: #ffc6b3!important;
+    background-color: #def8f6!important;
 }
-
 .botao:hover{
     color: white!important;
-    background-color: gray!important;
+    background-color: #476865!important;
 }
-
 .iframe-container{
     position: relative;
     width: 100%;
@@ -178,54 +181,14 @@ nav a:hover {
     width: 100%;
 }
 
+/*Fim do Contatos*/
 
-
-
-body{
-    font-family: 'Quicksand', sans-serif!important;
-    background-image:url("img/textura15.jpg");
-}
-
-.card-body{
-    background-color:rgba(255, 255, 255, 0.24)!important;
-}
+/*Inicio do Login */
 
 .card-header{
-    background-color:#ffc6b3!important;
+    background-color:#def8f6!important;
 }
-
 .card-footer{
-    background-color:#ffc6b3!important;
+    background-color:#def8f6!important;
 }
-
-.card-footer i{
-    color: rgb(92, 92, 92);
-}
-
-.login_btn{
-    color: black;
-    background-color:#ffc6b3!important;
-    width: 100px;
-}
-    
-.login_btn:hover{
-    color: white!important;
-    background-color: gray!important;
-}
-
-.input-group-prepend span{
-    background-color:#ffc6b3;
-    border:0 !important;
-    }
-
-.remember input
-{
-width: 20px;
-height: 20px;
-margin-left: 15px;
-margin-right: 5px;
-}
-
-.links{
-    color: black!important;
-}
+/*Final do Login */
