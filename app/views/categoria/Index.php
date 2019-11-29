@@ -4,7 +4,7 @@
             <input class="form-control mr-sm-2" type="search" name="categoria_pesquisar" placeholder="buscar..." aria-label="Search">
             <button class="btn btn-outline-dark" type="submit"><i class="fas fa-search"></i></button>
         </form>
-        <a href="<?php echo URL_BASE . "/categoria/novo" ?>"><button type="button" class="btn btn-outline-success">Nova Categoria</button></a>
+        <a href="<?php echo URL_BASE . "/categoria/novo" ?>"><button type="button" class="btn btn-outline-success"><i class="fas fa-plus"></i></button></a>
     </div>
     <table class="table text-center mt-3">
         <thead class="thead-dark">

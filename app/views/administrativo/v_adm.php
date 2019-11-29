@@ -33,13 +33,6 @@
                 </p>
             </a>
         </div>
-        <div class="mt-3 col-md-4 mb-3">
-            <a class="adm" title="NewsLetter" href="<?php echo URL_BASE . "/newsletter" ?>"><i class="fas fa-newspaper adm"></i>
-                <p>
-                    <h3>NewsLetter</h3>
-                </p>
-            </a>
-        </div>
     </div>
     <div class="mt-5 col-md-4 mb-3">
         <a href="<?php echo URL_BASE . "/login/logout" ?>"><button type="button" class="btn btn-outline-dark">Logout</button></a>

@@ -18,7 +18,7 @@
                 </div>
                 <div class="form-group">
                     <label for="exampleFormControlTextarea1">Descrição:</label>
-                    <textarea class="form-control" name="descricao" value="<?php echo $produto->descricao ?>" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    <input name="descricao" value="<?php echo $produto->descricao ?>" class="form-control" id="exampleFormControlTextarea1" rows="3">
                 </div>
                 <div class="form-group">
                     <label for="exampleFormControlFile1">Imagem:</label>
