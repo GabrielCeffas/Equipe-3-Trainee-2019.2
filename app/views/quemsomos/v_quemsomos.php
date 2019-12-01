@@ -5,7 +5,7 @@
     <div class="row p-2  text-center">
       <div class="col-md-6">
         <h2 class="text-center hist">Nossa História</h2>
-        <p class="texto_hist">A história da nossa empresa começa na vida da jovem Paula Rinco. Ela que veio do interior de Tangamandápio, pai de 2 crianças, Nathan e Laura, nunca desistiu dos seus sonhos. Um dia ela resolveu por em pratica o seu amor pelas Joais, então, ela fundou a Paula Brincos, empresa focada na venda das melhores joias e acessórios do mercado brasileiro. Ela começou com duas coleções de Lançamento: a Coleção Rinco voltada para o público feminino, e a coleção Ceffas voltada para o público masculino.</p>
+        <p class="texto_hist">A história da nossa empresa começa na vida da jovem Paula Rinco. Ela que veio do interior de Tangamandápio, pai de 2 crianças, Nathan e Laura, nunca desistiu dos seus sonhos. Um dia ela resolveu por em pratica o seu amor pelas Joias, então, ela fundou a Paula Brincos, empresa focada na venda das melhores joias e acessórios do mercado brasileiro. Ela começou com duas coleções de Lançamento: a Coleção Rinco voltada para o público feminino, e a coleção Ceffas voltada para o público masculino.</p>
       </div>
       <div class="col-md-6">
         <a href="<?php echo URL_BASE . "/assets/img/g4.png" ?>"><img id="qsomos" src="<?php echo URL_BASE . "/assets/img/g4.png" ?>"></a>
