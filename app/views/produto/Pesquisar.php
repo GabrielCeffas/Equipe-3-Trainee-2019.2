@@ -33,6 +33,6 @@
             } ?>
         </tbody>
     </table>
-    <a href="./Index"><button type="button" class="btn btn-outline-dark"><i class="fas fa-arrow-left"></i> Voltar</button></a>
+    <a href="<?php echo URL_BASE . "/produto" ?>"><button type="button" class="btn btn-outline-dark"><i class="fas fa-arrow-left"></i> Voltar</button></a>
 
 </div>
