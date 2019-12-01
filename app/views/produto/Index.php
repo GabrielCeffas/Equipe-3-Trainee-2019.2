@@ -6,7 +6,7 @@
         </form>
         <a href="/produto/novo"><button type="button" class="btn btn-outline-success" title="Criar Produto"><i class="fas fa-plus"></i></button></a>
     </div>
-    <table class="table mt-3">
+    <table class="table mt-3 text-center">
         <thead class="thead-dark">
             <tr>
                 <th scope="col">Nome</th>

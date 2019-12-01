@@ -87,10 +87,12 @@ class ProdutoController extends Controller
    public function pesquisar()
    {
       $produto = new Produto();
+      $categoria = new Categoria();
 
       $pesquisar = isset($_GET["produto_pesquisar"]) ? strip_tags(filter_input(INPUT_GET, "produto_pesquisar")) : NULL;
 
       $dados["produtos"] = $produto->resultado($pesquisar);
+      $dados["categorias"] = $categoria->lista();
       $dados["view"] = "produto/Pesquisar";
       if (require('./app/functions/loginCheck.php')) {
          $this->load("template", $dados);

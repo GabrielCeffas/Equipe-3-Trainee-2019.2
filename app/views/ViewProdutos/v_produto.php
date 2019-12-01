@@ -11,7 +11,7 @@
                 <div class="card-body">
                   <h5 class="card-title text-center"><?php echo $produto->nome ?></h5>
                   <p class="card-text text-center">Preço: R$ <?php echo $produto->preco ?>,00</p>
-                  <a href="<?php echo URL_BASE . "/produto/visualizar/" . $produto->id ?>"><button type="button" class="btn ver">Ver mais</button></a>
+                  <a href="<?php echo URL_BASE . "/produto/visualizar/" . $produto->id ?>"><button type="button" class="ver botao">Ver mais</button></a>
                 </div>
               </div>
             </div>

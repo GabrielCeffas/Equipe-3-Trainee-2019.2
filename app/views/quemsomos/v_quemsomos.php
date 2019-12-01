@@ -5,7 +5,7 @@
     <div class="row p-2  text-center">
       <div class="col-md-6">
         <h2 class="text-center hist">Nossa História</h2>
-        <p class="texto_hist">Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e mais recentemente quando passou a ser integrado a softwares de editoração eletrônica como Aldus PageMaker.</p>
+        <p class="texto_hist">A história da nossa empresa começa na vida da jovem Paula Rinco. Ela que veio do interior de Tangamandápio, pai de 2 crianças, Nathan e Laura, nunca desistiu dos seus sonhos. Um dia ela resolveu por em pratica o seu amor pelas Joais, então, ela fundou a Paula Brincos, empresa focada na venda das melhores joias e acessórios do mercado brasileiro. Ela começou com duas coleções de Lançamento: a Coleção Rinco voltada para o público feminino, e a coleção Ceffas voltada para o público masculino.</p>
       </div>
       <div class="col-md-6">
         <a href="<?php echo URL_BASE . "/assets/img/g4.png" ?>"><img id="qsomos" src="<?php echo URL_BASE . "/assets/img/g4.png" ?>"></a>
@@ -32,9 +32,20 @@
       <p class="hist">
         <h3>Valores:</h3>
       </p>
-      <p class="texto_hist text-center">Valor Genérico. Valor Genérico.</p>
-      <p class="texto_hist text-center">Valor Genérico. Valor Genérico.</p>
-      <p class="texto_hist text-center">Valor Genérico. Valor Genérico.</p>
+      <ul>
+        <li>
+          <p class="texto_hist text-center">Respeito à vida, às pessoas e ao meio ambiente</p>
+        </li>
+        <li>
+          <p class="texto_hist text-center">Só é bom para a gente, se for bom para o cliente</p>
+        </li>
+        <li>
+          <p class="texto_hist text-center">Qualidade e melhoria contínua dos produtos para satisfação dos consumidores</p>
+        </li>
+        <li>
+          <p class="texto_hist text-center">Compromisso com a verdade</p>
+        </li>
+      </ul>
     </div>
   </div>
 </main>

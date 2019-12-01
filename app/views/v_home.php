@@ -31,9 +31,8 @@
       <div class="card">
         <img src="<?php echo URL_BASE . "/assets/img/brinco.jpg" ?>" class="card-img-top" alt="...">
         <div class="card-body">
-          <h5 class="card-title text-center">Brinco de diamantes</h5>
-          <p class="card-text text-center">Descrição do produto</p>
-          <a href="<?php echo URL_BASE . "/produto/view_produto" ?>" class="btn btn-outline-dark btn-lg btn-block">Ver mais</a>
+          <h5 class="card-title text-center">Brinco Rinco</h5>
+          <a href="<?php echo URL_BASE . "/produto/View_Produto/" ?>"><button type="button" class="ver botao">Ver mais</button></a>
         </div>
       </div>
     </div>
@@ -41,9 +40,8 @@
       <div class="card">
         <img src="<?php echo URL_BASE . "/assets/img/anel.jpg" ?>" class="card-img-top" alt="...">
         <div class="card-body">
-          <h5 class="card-title text-center">Anel ouro amarelo</h5>
-          <p class="card-text text-center">Descrição do produto</p>
-          <a href="<?php echo URL_BASE . "/produto/view_produto" ?>" class="btn btn-outline-dark btn-lg btn-block">Ver mais</a>
+          <h5 class="card-title text-center">Anel Rinco</h5>
+          <a href="<?php echo URL_BASE . "/produto/View_Produto/" ?>"><button type="button" class="ver botao">Ver mais</button></a>
         </div>
       </div>
     </div>
@@ -51,19 +49,17 @@
       <div class="card">
         <img src="<?php echo URL_BASE . "/assets/img/colar.jpg" ?>" class="card-img-top" alt="...">
         <div class="card-body">
-          <h5 class="card-title text-center">Colar de diamantes</h5>
-          <p class="card-text text-center">Descrição do produto</p>
-          <a href="<?php echo URL_BASE . "/produto/view_produto" ?>" class="btn btn-outline-dark btn-lg btn-block">Ver mais</a>
+          <h5 class="card-title text-center">Colar Rinco</h5>
+          <a href="<?php echo URL_BASE . "/produto/View_Produto/" ?>"><button type="button" class="ver botao">Ver mais</button></a>
         </div>
       </div>
     </div>
     <div class="col-lg-3 col-md-6 mb-3">
       <div class="card">
-        <img src="<?php echo URL_BASE . "/assets/img/pulseira.jpg" ?>" class="card-img-top" alt="...">
+        <img src="<?php echo URL_BASE . "/assets/img/relogios.jpg" ?>" class="card-img-top" alt="...">
         <div class="card-body">
-          <h5 class="card-title text-center">Pulseira ouro amarelo</h5>
-          <p class="card-text text-center">Descrição do produto</p>
-          <a href="<?php echo URL_BASE . "/produto/view_produto" ?>" class="btn btn-outline-dark btn-lg btn-block">Ver mais</a>
+          <h5 class="card-title text-center">Relogio Ceffas</h5>
+          <a href="<?php echo URL_BASE . "/produto/View_Produto/" ?>"><button type="button" class="ver botao">Ver mais</button></a>
         </div>
       </div>
     </div>

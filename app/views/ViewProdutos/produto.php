@@ -16,12 +16,12 @@
             <p>
                 <h6 class="font-weight-bold">Preço: R$ <?php echo $produto->preco ?>,00</h6>
             </p>
-            <a href="<?php echo URL_BASE . "/contato" ?>"><button type="button" class="ver">Visite nossa Loja!</button></a>
+            <a href="<?php echo URL_BASE . "/contato" ?>"><button type="button" class="ver botao">Visite nossa Loja!</button></a>
         </div>
         <div class="mt-3 row col-md-4">
             <p class="col text-center"><?php echo $produto->descricao ?></p>
         </div>
     </div>
     <input type="hidden" name="id" value="<?php echo $produto->id ?>">
-    <a href="<?php echo URL_BASE . "/produto/view_produto" ?>"><button type="button" class="ver mb-2 mt-5"><i class="fas fa-arrow-left"></i> Voltar</button></a>
+    <a href="<?php echo URL_BASE . "/produto/view_produto" ?>"><button type="button" class="ver botao mb-2 mt-5"><i class="fas fa-arrow-left"></i> Voltar</button></a>
 </div>

@@ -206,7 +206,10 @@ nav a:hover {
     height: 100%;
     width: 100%;
 }
-
+.bot{
+    max-width: 130px;
+    min-width: 10px;
+}
 /*Fim do Contatos*/
 
 /*Inicio do Login */

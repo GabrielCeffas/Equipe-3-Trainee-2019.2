@@ -1,4 +1,3 @@
-
 <div class="container text-center">
     <div class="mt-4">
         <h1>Bem Vindo a Home Administrativa!</h1>
@@ -23,13 +22,6 @@
             <a class="adm" title="Categorias" href="<?php echo URL_BASE . "/categoria" ?>"><i class="fas fa-list adm"></i>
                 <p>
                     <h3>Categorias</h3>
-                </p>
-            </a>
-        </div>
-        <div class="mt-3 col-md-4 mb-3">
-            <a class="adm" title="Contatos" href="<?php echo URL_BASE . "/contato/recebidos" ?>"><i class="fas fa-address-book adm"></i>
-                <p>
-                    <h3>Contatos</h3>
                 </p>
             </a>
         </div>

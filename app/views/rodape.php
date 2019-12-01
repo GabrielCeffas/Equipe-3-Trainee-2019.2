@@ -9,7 +9,7 @@
             <h6>Nossa empresa</h6>
           </p>
           <p><a class="menu" href="<?php echo URL_BASE ?>">Home</a></p>
-          <p><a class="menu" href="<?php echo URL_BASE . "/ViewProdutos" ?>">Veja os nossos produtos</a></p>
+          <p><a class="menu" href="<?php echo URL_BASE . "/produto/View_Produto" ?>">Veja os nossos produtos</a></p>
           <p><a class="menu" href="<?php echo URL_BASE . "/QuemSomos" ?>">Quem Somos</a></p>
           <p><a class="menu" href="<?php echo URL_BASE . "/Contato" ?>">Entre em contato</a></p>
         </nav>
@@ -29,6 +29,6 @@
           <a title="Whatsapp" href="http://web.whatsapp.com/"><i class="fab fa-whatsapp-square social"></i></a></p>
       </div>
     </div>
-    <p id="copyright" >© Copyright 2019 - Todos os direitos reservados. <a href="<?php echo URL_BASE . "/login" ?>"><i class="mb-2 fas fa-lock login"></i></a></p>
+    <p id="copyright">© Copyright 2019 - Todos os direitos reservados. <a href="<?php echo URL_BASE . "/login" ?>"><i class="mb-2 fas fa-lock login"></i></a></p>
   </div>
 </footer>
