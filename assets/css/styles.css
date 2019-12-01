@@ -221,3 +221,12 @@ nav a:hover {
     background-color:#def8f6!important;
 }
 /*Final do Login */
+
+/* Inicio do crud*/
+
+.thumb{
+    max-width: 40px;
+    min-width: 10px;
+}
+
+/* Final do crud*/

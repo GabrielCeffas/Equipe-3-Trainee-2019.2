@@ -5,8 +5,8 @@
     <table class="table mt-3 text-center">
         <thead class="thead-dark">
             <tr>
+                <th scope="col">#</th>
                 <th scope="col">Nome</th>
-                <th scope="col">Email</th>
                 <th scope="col">Ação</th>
             </tr>
         </thead>
@@ -15,8 +15,8 @@
             <?php if (is_array($usuarios)) {
                 foreach ($usuarios as $usuario) { ?>
                     <tr>
+                        <td><img src="../../../assets/img/<?php echo $usuario->url_imagem ?>" alt="..." class="thumb"></td>
                         <td><?php echo $usuario->nome ?></td>
-                        <td><?php echo $usuario->email ?></td>
                         <td>
                             <a href="<?php echo URL_BASE . "/usuario/editar/" . $usuario->id ?>" title="Editar" class="btn btn-outline-info mb-2"><i class="fas fa-user-edit"></i></a>
                             <a href="<?php echo URL_BASE . "/usuario/apagar/" . $usuario->id ?>" title="Apagar" class="btn btn-outline-danger mb-2"><i class="fas fa-trash-alt"></i></a>

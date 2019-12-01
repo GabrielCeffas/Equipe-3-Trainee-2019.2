@@ -23,8 +23,8 @@
           <p><input class="UserEmail form-control" name="UserEmail" id="UserEmail" type="email" placeholder="Seu email"></p>
           <p><input class="btn btn-outline-dark bto" type="submit" value="Inscreva-se!" /></p>
         </section>
-        <p><a title="Facebook" href="http://facebook.com/"><i class="fab fa-facebook-square social"></i></a>
-          <a title="Instagram" href="http://instagram.com/"><i class="fab fa-instagram social"></i></i></a>
+        <p><a title="Facebook" href="https://web.facebook.com/paula.rincorodriguespereira"><i class="fab fa-facebook-square social"></i></a>
+          <a title="Instagram" href="https://www.instagram.com/_prrp_/"><i class="fab fa-instagram social"></i></i></a>
           <a title="Twitter" href="http://twitter.com/"><i class="fab fa-twitter social"></i></i></a>
           <a title="Whatsapp" href="http://web.whatsapp.com/"><i class="fab fa-whatsapp-square social"></i></a></p>
       </div>
